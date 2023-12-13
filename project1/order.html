@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="basic.css" type="text/css">
+  <link rel="stylesheet" href="font.css" type="text/css">
+  <link rel="stylesheet" href="header.css" type="text/css">
+  <link rel="stylesheet" href="order.css" type="text/css">
+  <link rel="stylesheet" href="footer.css" type="text/css">
+  <title>회원가입</title>
+	<style>
+	.nav-bottom{width:100%; height:4px; background:#97999c; overflow:hidden;}
+	</style>
+ </head>
+ <body id="homepage">
+	<div id="header">
+ 		<div id="gnb">
+			<ul>
+				<li><a href="loginpage.html" class="line">로그인</a></li>
+				<li><a href="plajoin.html">회원가입</a></li>
+				<li><a href="mymenu.html">마이메뉴</a></li>
+				<li><a href="jangbaguni.html">장바구니</a></li>
+			</ul>
+	</div>
+<!--gnb end-->
+	
+		<h1 class="header1">
+			<a href="home1.html"><img src="images/logo.png" width="210" height="65" alt="로고"></a>
+		</h1>
+		<div class="header2">
+			<div class="search">
+			<input type="search" placeholder="검색어를 입력해주세요">
+			<button><a href="#"><img src="images/search.png" width="35" height="25" alt="검색"></a></button>
+			</div>
+		</div>
+		<div class="header3">
+			<div class="imgswap"> 
+				<img src="images/mouseout.png" width="200" height="100" alt="주문배송이미지">
+				<a href="delivery.html"><img src="images/mouseover.png" width="200" height="100"></a>
+			</div>
+		</div>
+		<div id="lnb">
+		<div class="nav-inner">
+			<ul>
+				<li class="toy1"><a href="plamodel.html">프라모델</a>
+					<ul>
+						<li><a href="plamodel.html">건담 프라모델</a></li>
+						<li><a href="">캐릭터 프라모델</a></li>
+						<li><a href="#">스케일 프라모델</a></li>
+						<li><a href="#">기타</a></li>
+					</ul>
+				</li>
+				<li class="toy2"><a href="onepiece.html">피규어</a>
+					<ul>
+						<li><a href="onepiece.html">메가하우스</a></li>
+						<li><a href="#">반다이</a></li>
+						<li><a href="#">혼웹 한정</a></li>
+						<li><a href="#">고토부키야</a></li>
+						<li><a href="#">굿스마일</a></li>
+					</ul>
+				</li>
+				<li class="toy3"><a href="custom.html">커스텀</a>
+					<ul>
+						<li><a href="custom.html">프라모델</a></li>
+						<li><a href="#">피규어</a></li>
+						<li><a href="#">디오라마</a></li>
+					</ul>
+				</li>
+				<li class="toy4"><a href="community.html">커뮤니티</a>
+					<ul>
+						<li><a href="#">자랑 갤러리</a></li>
+						<li><a href="#">부품 나눔거래</a></li>
+						<li><a href="#">제품 리뷰 공유</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+<!--header end-->
+	<div class="nav-bottom">
+	</div>
+<!--nav end-->
+	<!--주문 결제 시작-->
+	<div id="wrap">
+		<h2>주문/결제</h2>
+			<div class="box1">
+			<ul>
+				<li>장바구니</li>
+				<li>></li>
+				<li>주문/결제</li>
+				<li>></li>
+				<li>주문완료</li>
+			 </ul>
+			 </div>
+		<h3>주문 리스트</h3>
+			<div class="order-_list">
+			<table width="1020" height="65">
+				<colgroup>
+					<col style="width:25%">
+					<col style="width:40%">
+					<col style="width:8%">
+					<col style="width:15%">
+					<col style="width:12%">
+				</colgroup>
+				<tr>
+					<th scope="col" bgcolor="#f3f4f6" class="first"></th>
+					<th scope="col" bgcolor="#f3f4f6" class="first">제품</th>
+					<th scope="col" bgcolor="#f3f4f6" class="first">수량</th>
+					<th scope="col" bgcolor="#f3f4f6" class="first">가격</th>
+					<th scope="col" bgcolor="#f3f4f6" class="first">포인트</th>
+				</tr>
+			</table>
+
+			<table width="1020" height="220">
+				<colgroup>
+					<col style="width:25%">
+					<col style="width:40%">
+					<col style="width:8%">
+					<col style="width:15%">
+					<col style="width:12%">
+				</colgroup>
+				<tr> 
+					<th scope="col"><img src="images/hguc1.jpg" class="product" alt="HGUC 겔구그 소데츠키 사양"></th>
+					<td scope="col" class="product_ex">HGUC 겔구그 소데츠키 사양</td>
+					<td scope="col" class="product_ex">1</td>
+					<td scope="col" class="product_ex">18,000원</td>
+					<td scope="col" class="product_ex">180</td>
+				</tr>
+			</table>
+			</div>
+			<h3>주문자 정보</h3>
+			<form method="post" id="order" action="" >
+				<table width="1020" height="270">
+					<colgroup>
+						<col style="width:20%" bgcolor="#f3f4f6">
+						<col style="width:80%">
+					</colgroup>
+			
+				<tbody>
+				<tr>
+					<th class="first">이름</th>
+					<td class="first1">부찬영</td>
+				</tr>
+
+				<tr>
+					<th>이메일</th>
+					<td>
+					<input type="text" title="이메일주소앞" id="email1" style="width:170px; margin-right:5px;" maxlength="30" placeholder="plagogo">@
+					<input type="text" title="이메일주소뒤" id="email2" style="width:250px; margin:0;" maxlength="40" placeholder="naver.com">
+					<select class="select2" name="email3" id="email3" title="이메일주소 뒤 선택" style="width:98px;">
+					<option value="write">직접입력</option>
+					<option value="naver.com">네이버</option>
+					<option value="nate.com">네이트</option>
+					<option value="hamail.net">다음</option>
+					<option value="gmail.com">지메일</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<th>연락처</th>
+					<td>
+					<input type="text" size="4" maxlength="4" placeholder="010" required>
+					-
+					<input type="text" size="4" maxlength="4" style="margin:0;" placeholder="1234" required>&nbsp;-
+					<input type="text" size="4" maxlength="4" style="margin:0;" placeholder="5678" required>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+			</form>
+		<h3>배송 정보</h3>
+		<form method="post" id="delivery" action="" >
+			<table width="1020" height="600">
+				<colgroup>
+					<col style="width:20%" bgcolor="#f3f4f6">
+					<col style="width:80%">
+				</colgroup>
+				<tbody>
+				<tr>
+					<th class="first">연락처</th>
+					<td class="first">
+					<input type="text" size="4" maxlength="4" placeholder="010" required>
+					-
+					<input type="text" size="4" maxlength="4" style="margin:0;" placeholder="1234" required>&nbsp;-
+					<input type="text" size="4" maxlength="4" style="margin:0;" placeholder="5678" required>
+					</td>
+				</tr>
+
+				<tr>
+					<th class="ad-choice">배송지선택</th>
+					<td>
+					<input type="radio" name="ck_button" value="2" id="home">
+					<label for="home">자택</label>
+					<input type="radio" name="ck_button" value="1" id="company">
+					<label for="company">회사</label>
+					<input type="radio" name="ck_button" value="0" id="lately" checked>
+					<label for="lately">최근 배송지</label>
+					</td>
+				</tr>
+
+				<tr>
+					<th class="address">주소</th>
+					<td>
+					<input type="text" size="4" maxlength="4" required>
+					-
+					<input type="text" size="4" maxlength="4" style="margin:0;" required>
+					<span class="postcode">
+					<input type="submit" value="우편번호">
+					</span>
+					<p class="detail_ad"><input type="text" style="width:480px" title="기본주소" id="address1" maxlength="50">
+					</p>
+					<p class="detail_ad"><input type="text" style="width:480px" title="기본주소" id="detail_ad" maxlength="50" placeholder="상세주소를 입력하세요.">
+					</p>
+					</td>
+				</tr>
+				<tr>
+					<th class="delivery_msg">배송메세지<br>(100자 내외)</th>
+					<td>
+						<textarea class="message" style="width:770px; height:70px;" >
+						</textarea>	
+					</td>
+				</tr>
+				<tr>
+					<th class="payer">무통장 입금자명</th>
+					<td>
+						<input type="text" size="12" maxlength="12" placeholder="부찬영" required><span class="omit">(주문자와 같을 경우 생략 가능)</span>
+					</td>
+				</tr>
+				<tr>
+					<th class="discount">적용 가능한 쿠폰</th>
+					<td>
+					<p class="sale">
+					<select class="sale1" name="coupon" id="coupon" title="쿠폰선택" style="width:235px; height:40px;" >
+					<option value="없음">적용 가능 쿠폰이 없습니다.</option>
+					<option value="20%">(VIP)전	상품 20%할인쿠폰</option>
+					<option value="2000원">배송비 2000원 할인쿠폰</option>
+					<option value="10%">2020 PLAGOGO창립기념쿠폰</option>
+					</select>
+					<span class="apply_cp">
+					<input type="submit" value="쿠폰적용">
+					</span>
+					</p>
+					</td>
+				</tr>
+				
+				<tr>
+					<th>적용 가능한 포인트</th>
+					<td>
+					<p class="use_point">
+					2500p
+					</p>
+					<span class="apply_p">
+					<input type="submit" value="포인트적용">
+					</span>
+					<p class="p_caution">
+					(*포인트는 2000포인트 이상부터 사용 가능합니다.)
+					</p>
+					</td>
+				</tr>
+			</tbody>
+			</table>
+			</form>
+
+			<form method="post" id="result" action="" >
+				<table width="1020" height="200">
+					<colgroup>
+					<col style="width:30%" bgcolor="#f3f4f6">
+					<col style="width:70%">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th class="last">최종 결제<br>금액</th>
+						<td class="first">
+						<p class="sum">20,500원</p>
+						<span class="saved">(적립 예정 금액:180원)</span>
+						<p class="saved_caution">(적립 예정금액과 최종 적립금액은 상이할 수 있습니다. 주문 완료시 지급되는 적립금을 확인해주시기 바랍니다.)</p>
+					</td>
+					</tr>
+					</tbody>
+				</table>
+			</form>
+		
+			<div class="buy-bt">
+				<span class="u-buy" onclick='alert("구매가 완료 되었습니다.")'>
+				<input type="submit" value="구매하기" onclick="location.href='home1.html'" style="cursor:pointer">
+				</span>
+				<span class="no-buy">
+				<input type="submit" value="구매취소" onclick="location.href='jangbaguni.html'" style="cursor:pointer">
+				</span>
+			</div>
+	</div>
+	<!--주문결제 끝-->
+	<div id="footer">
+		<div id="footerinfo">
+			<img src="images/logo.png" width="130" height="40">
+			<div class="footerlb">
+				<p>
+					프라고고(주) ㅣ 대표이사:이승표,부찬영,문준우,이민형 안양시 만안구 안양동 000-00<br>
+				
+					사업자 등록번호:123 - 38 - 33675 통신판매업신고:2017 - 경기안양 - 0680<br>
+				
+					이메일:help@plagogo.com 카카오톡:plagogo<br>
+					<span class="font-20">
+					전화번호:070 - 1234 - 5678 FAX:070 - 1234 - 5678<br><br>
+					</span>
+					<span class="font-20">
+					국민은행 112244 - 33 - 456789<br>
+					</span>
+				</p>
+			</div>
+			<div class="footerrb">
+				<img src="images/kakao.png" width="50" height="50">
+				<img src="images/naver.png" width="50" height="50">
+				<img src="images/facebook.png" width="50" height="50">
+				<img src="images/google.png" width="50" height="50">
+				<img src="images/twitter.png" width="50" height="50">
+				<img src="images/line.png" width="50" height="50">
+			</div>
+		</div>
+	</div>
+</div>
+  
+ </body>
+</html>

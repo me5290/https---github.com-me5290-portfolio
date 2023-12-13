@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+	.mv-bg{
+		display:none;
+	}
+	#join{
+		width:1200px;
+		height:1300px;
+		margin:0 auto;
+		margin-top:80px;
+		margin-bottom:80px;
+		border:2px solid #000;
+	}
+	#join>h2{
+		font:bold 36px "Malgun Gothic";
+		margin:20px 0 20px 60px;
+	}
+	.formsection{
+		border-top:2px solid #000;
+		width:90%;
+		margin:0 auto;
+	}
+	.lal{
+		width:150px;
+		height:70px;
+		margin-right:20px;
+		display: inline-block;
+		text-align:center;
+		line-height:70px;
+		background:#ababab;
+		vertical-align:top;
+	}
+	input[type="text"]{
+		width:300px;
+		height:30px;
+		margin-top:20px;
+		font-size:14px;
+	}
+	.formsection:nth-child(2){
+		height:100px;
+		position:relative;
+	}
+	.formsection:nth-child(2)>.lal{
+		height:100px;
+		line-height:100px;
+	}
+	.explanation1{
+		position:absolute;
+		left:180px;
+		bottom:14px;
+		font:14px "Malgun Gothic";
+	}
+	.formsection:nth-child(3){
+		height:120px;
+		position:relative;
+	}
+	.formsection:nth-child(3)>.lal{
+		height:120px;
+		line-height:110px;
+	}
+	.explanation2{
+		position:absolute;
+		left:180px;
+		bottom:14px;
+		font:14px "Malgun Gothic";
+	}
+	.phone-num{
+		width:60px;
+		height:20px;
+		margin-top:26px;
+	}
+	.y-m-d{
+		width:60px;
+		height:20px;
+		margin-top:26px;
+	}
+	#man{
+		margin:10px;
+		margin-top:30px;
+	}
+	#women{
+		margin:10px;
+	}
+	.formsection:nth-child(7)>input[type="text"]{
+		width:100px;
+		height:18px;
+	}
+	#Address{
+		width:500px;
+		height:30px;
+		margin-top:30px;
+	}
+	.formsection:nth-child(9){
+		height:140px;
+		position:relative;
+	}
+	.formsection:nth-child(9)>.lal{
+		height:140px;
+		line-height:140px;
+	}
+	.formsection:nth-child(9)>input[type="text"]:nth-child(2){
+		position:absolute;
+		left:175px;
+		bottom:30px;
+	}
+	.formsection:nth-child(10)>input[type="text"]{
+		width:200px;
+	}
+	.formsection:nth-child(10)>select{
+		width:200px;
+		height:34px;
+	}
+	input[type="checkbox"]{
+		margin:30px 10px;
+	}
+	.formsection:nth-child(11){
+		border-bottom:2px solid #000;
+	}
+	.join-btn{
+		width:300px;
+		height:100px;
+		margin:65px 460px;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.join-btn>a{
+		font:bold 34px "Malgun Gothic";
+		padding:30px 80px;
+	}
+	.join-btn:hover{
+		background:#999;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	.mv-bg{
+		display:none;
+	}
+	#join{
+		width:764px;
+		height:1200px;
+		margin:0 auto;
+		margin-top:40px;
+		margin-bottom:40px;
+	}
+	#join>h2{
+		font:bold 36px "Malgun Gothic";
+		text-align:center;
+		margin:20px 0;
+	}
+	.formsection{
+		border-top:2px solid #000;
+		width:90%;
+		margin:0 auto;
+	}
+	.lal{
+		width:150px;
+		height:70px;
+		margin-right:20px;
+		display: inline-block;
+		text-align:center;
+		line-height:70px;
+		background:#ababab;
+		vertical-align:top;
+	}
+	input[type="text"]{
+		width:300px;
+		height:30px;
+		margin-top:20px;
+		font-size:14px;
+	}
+	.formsection:nth-child(2){
+		height:100px;
+		position:relative;
+	}
+	.formsection:nth-child(2)>.lal{
+		height:100px;
+		line-height:100px;
+	}
+	.explanation1{
+		position:absolute;
+		left:180px;
+		bottom:14px;
+		font:14px "Malgun Gothic";
+	}
+	.formsection:nth-child(3){
+		height:120px;
+		position:relative;
+	}
+	.formsection:nth-child(3)>.lal{
+		height:120px;
+		line-height:110px;
+	}
+	.explanation2{
+		position:absolute;
+		left:180px;
+		bottom:14px;
+		font:14px "Malgun Gothic";
+	}
+	.phone-num{
+		width:60px;
+		height:20px;
+		margin-top:26px;
+	}
+	.y-m-d{
+		width:60px;
+		height:20px;
+		margin-top:26px;
+	}
+	#man{
+		margin:10px;
+		margin-top:30px;
+	}
+	#women{
+		margin:10px;
+	}
+	.formsection:nth-child(7)>input[type="text"]{
+		width:100px;
+		height:18px;
+	}
+	#Address{
+		width:500px;
+		height:30px;
+		margin-top:30px;
+	}
+	.formsection:nth-child(9){
+		height:140px;
+		position:relative;
+	}
+	.formsection:nth-child(9)>.lal{
+		height:140px;
+		line-height:140px;
+	}
+	.formsection:nth-child(9)>input[type="text"]:nth-child(2){
+		position:absolute;
+		left:175px;
+		bottom:30px;
+	}
+	.formsection:nth-child(10)>input[type="text"]{
+		width:200px;
+	}
+	.formsection:nth-child(10)>select{
+		width:200px;
+		height:34px;
+	}
+	input[type="checkbox"]{
+		margin:30px 10px;
+	}
+	.formsection:nth-child(11){
+		border-bottom:2px solid #000;
+	}
+	.join-btn{
+		width:240px;
+		height:80px;
+		margin:45px 260px;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.join-btn>a{
+		font:bold 34px "Malgun Gothic";
+		padding:30px 50px;
+	}
+	.join-btn:hover{
+		background:#999;
+	}
+}
+@media screen and (max-width:767px){
+	.mv-bg{
+		display:none;
+	}
+	#join{
+		width:375px;
+		height:1000px;
+		margin:0 auto;
+		margin-top:10px;
+	}
+	#join>h2{
+		font:bold 24px "Malgun Gothic";
+		text-align:center;
+		margin:20px 0;
+	}
+	.formsection{
+		border-top:2px solid #000;
+		width:90%;
+		height:50px;
+		margin:0 auto;
+	}
+	.lal{
+		width:100px;
+		height:50px;
+		margin-right:10px;
+		display: inline-block;
+		text-align:center;
+		line-height:50px;
+		background:#ababab;
+		vertical-align:top;
+		font-size:14px;
+	}
+	input[type="text"]{
+		width:170px;
+		height:20px;
+		margin-top:14px;
+		font-size:10px;
+	}
+	.formsection:nth-child(2){
+		height:100px;
+		position:relative;
+	}
+	.formsection:nth-child(2)>.lal{
+		height:100px;
+		line-height:100px;
+	}
+	.explanation1{
+		position:absolute;
+		left:116px;
+		bottom:14px;
+		font:12px "Malgun Gothic";
+	}
+	.formsection:nth-child(3){
+		height:120px;
+		position:relative;
+	}
+	.formsection:nth-child(3)>.lal{
+		height:120px;
+		line-height:120px;
+	}
+	.explanation2{
+		position:absolute;
+		left:116px;
+		bottom:10px;
+		font:12px "Malgun Gothic";
+	}
+	.phone-num{
+		width:60px;
+		height:20px;
+		margin-top:16px;
+	}
+	.y-m-d{
+		width:60px;
+		height:20px;
+		margin-top:16px;
+	}
+	#man{
+		margin:10px;
+		margin-top:20px;
+	}
+	#women{
+		margin:10px;
+	}
+	.formsection:nth-child(7)>input[type="text"]{
+		width:50px;
+		height:18px;
+	}
+	.formsection:nth-child(7)>label:nth-child(2){
+		display:none;
+	}
+	#Address{
+		width:210px;
+		height:20px;
+		margin-top:20px;
+	}
+	.formsection:nth-child(9){
+		height:100px;
+		position:relative;
+	}
+	.formsection:nth-child(9)>.lal{
+		height:100px;
+		line-height:100px;
+	}
+	.formsection:nth-child(9)>input[type="text"]:nth-child(2){
+		position:absolute;
+		left:115px;
+		bottom:20px;
+	}
+	.formsection:nth-child(10)>input[type="text"]{
+		width:80px;
+	}
+	.formsection:nth-child(10)>select{
+		width:80px;
+		height:26px;
+	}
+	input[type="checkbox"]{
+		margin:20px 4px;
+	}
+	.formsection:nth-child(11){
+		border-bottom:2px solid #000;
+	}
+	.formsection:nth-child(11)>label:nth-child(3),.formsection:nth-child(11)>label:nth-child(5){
+		font-size:10px;
+	}
+	.join-btn{
+		width:140px;
+		height:60px;
+		margin:45px 116px;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.join-btn>a{
+		font:bold 26px "Malgun Gothic";
+		padding:30px 10px;
+	}
+	.join-btn:hover{
+		background:#999;
+	}
+}

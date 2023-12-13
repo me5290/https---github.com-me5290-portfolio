@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>메인페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/main.css">
+		<!--[if lt IE 9]>
+		<script sec="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(function(){
+				var $bnnNum=0;
+				$('.next').click(function(e){
+					e.preventDefault();
+					if($bnnNum>=3)return false;
+					$bnnNum++;
+					var $book_w=$('#slide').width();
+					console.log($book_w);
+					$('#img-frame').animate({'left':-$book_w*$bnnNum},400,function(){
+						$('#slide-roll img').attr('src','images/roll_out.png');
+						$('#slide-roll img')
+						.eq($bnnNum).attr('src','images/roll_over.png');
+					});
+				});
+				$('.prev').click(function(e){
+					e.preventDefault();
+					if($bnnNum<=0)return false;
+					$bnnNum--;
+					var $book_w=$('#slide').width();
+					$('#img-frame').animate({'left':-$book_w*$bnnNum},400,function(){
+						$('#slide-roll img').attr('src','images/roll_out.png');
+						$('#slide-roll img')
+						.eq($bnnNum).attr('src','images/roll_over.png');
+					});
+				});
+				
+				$('.menu_btn>a').on('click', function(){
+					$('.menu_bg').show(); 
+					$('.sidenav_menu').animate({right:0});  
+				});
+				$('.close_btn>a').on('click', function(){
+					$('.menu_bg').hide(); 
+					$('.sidenav_menu').animate({
+						right: '-' + 50 + '%'
+								});  
+				});
+		
+			
+				$(".sidenav_menu ul.dropdown").hide();
+				$(".sidenav_menu ul.menu_wrap li").click(function(){
+					$("ul",this).slideToggle("fast");
+				});
+			});
+ 
+		
+		</script>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<header>
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="320" height="70"></a></h2>
+			<div class="pc-nav">
+				<ul class="gnb">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">
+						<label for="Language" class="lang">언어</label>
+							<select name="language" id="language" size="1">
+								<option value="korean">한국어</option>
+								<option value="japanese">日本語</option>
+								<option value="English">English</option>
+								<option value="france">Français</option>
+								<option value="Thailand">ภาษาไทย</option>
+							</select>
+					</a></li>
+				</ul>
+				<nav id="lnb">
+					<ul>
+						<li class="n n1">
+							<a href="main.html" class="nn">상점</a>
+							<ul>
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li class="n n2">
+							<a href="sub.html" class="nn">커뮤니티</a>
+							<ul>
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						<li class="n n3">
+							<a href="#" class="nn">정보</a>
+							<ul>
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li class="n n4">
+							<a href="#" class="nn">고객지원</a>
+							<ul>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="head-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+				</nav>
+			</div>
+			<div class="phone-nav">
+				<div class="menu_btn">
+					<a href="#">       
+						<img  src="images/hamberger.png" alt="햄버거 버튼" width="30" height="24">
+					</a>
+				</div>
+				<div class="menu_bg"></div>
+				<div class="sidenav_menu">
+					<div class="sidenav-header">
+						<ul class="gnb">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+						</ul>
+						<div class="close_btn"><a href="#">       
+							<img src="images/side-close.png" alt="사이드 메뉴 닫기">
+							</a>
+						</div>
+					</div>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="side-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+					<ul class="menu_wrap">
+						<li>
+							<a href="main.html">
+								상점
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub.html">
+								커뮤니티
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						  <li>
+							<a href="#">
+								정보
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								고객지원
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mv-bg">
+				<a href="#">
+					<video class="mv" loop="" muted="" autoplay="" playsinline="" poster="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/page_bg_koreana.jpg?t=1607397193" class="fullscreen-bg__video">
+						<source src="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/webm_page_bg_koreana.webm?t=1607397193" type="video/webm">
+						<source src="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/mp4_page_bg_koreana.mp4?t=1607397193" type="video/mp4">
+					</video>
+				</a>
+			</div>
+		</header>
+		<section>
+			<div id="slide">
+				<div id="img-frame">
+					<div class="slide-img">
+						<a href="#">
+							<img src="images/slide-img1.jpg" width="1300" height="600" alt="첫번째 슬라이드 이미지">
+						</a>
+					</div>
+					<div class="slide-img">
+						<a href="#">
+							<img src="images/slide-img2.jpg" width="1300" height="600" alt="두번째 슬라이드 이미지">
+						</a>
+					</div>
+					<div class="slide-img">
+						<a href="#">
+							<img src="images/slide-img3.jpg" width="1300" height="600" alt="세번째 슬라이드 이미지">
+						</a>
+					</div>
+					<div class="slide-img">
+						<a href="#">
+							<img src="images/slide-img4.jpg" width="1300" height="600" alt="네번째 슬라이드 이미지">
+						</a>
+					</div>
+				</div>
+				<div id="arrow">
+					<a class="prev" href="#" onclick="">
+						<img src="images/left_btn.png" alt="이전" width="100" height="100">
+					</a>
+					<a class="next" href="#" onclick="">
+						<img src="images/right_btn.png" alt="다음" width="100" height="100">
+					</a>
+				</div>
+			</div>
+			<div class="box1">
+				<h2>인기게임</h2>
+				<ul class="box-img">
+					<li class="img1">
+						<a href="#">
+							<img src="images/con1-1.jpg" alt="사이버펑크" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Cyberpunk2077
+								</p>
+								<p class="price">
+									 54,000
+								</p>
+							</div>
+						</a>
+						<ul class="over-pg">
+							<li><h3>Cyberpunk2077</h3></li>
+							<li>출시일 2020 년 12 월 10 일</li>
+							<li><video id="movie_256810269" playsinline="true" class="highlight_player_item highlight_movie" poster="https://steamcdn-a.akamaihd.net/steam/apps/256810269/movie.293x165.jpg?t=1605891056" preload="none" src="https://steamcdn-a.akamaihd.net/steam/apps/256810269/movie480_vp9.webm?t=1605891056" data-hd-src="https://steamcdn-a.akamaihd.net/steam/apps/256810269/movie_max_vp9.webm?t=1605891056"></video></li>
+							<li><strong>사용자평가</strong> 대체로 긍정적</li>
+						</ul>
+					</li>
+					<li class="img2">
+						<a href="#">
+							<img src="images/con1-2.jpg" alt="배틀그라운드" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									PLAYERUNKNOWN’S<br>
+									BATTLEGROUNDS
+								</p>
+								<p class="price">
+									 16,000
+								</p>
+							</div>
+						</a>
+						<ul class="over-pg">
+							<li><h3>PLAYERUNKNOWN’S<br>
+									BATTLEGROUNDS</h3></li>
+							<li>출시일 2017 년 12 월 21 일</li>
+							<li><video id="movie_256805874" playsinline="true" class="highlight_player_item highlight_movie" poster="https://steamcdn-a.akamaihd.net/steam/apps/256805874/movie.293x165.jpg?t=1603301348" preload="none" src="https://steamcdn-a.akamaihd.net/steam/apps/256805874/movie480_vp9.webm?t=1603301348" data-hd-src="https://steamcdn-a.akamaihd.net/steam/apps/256805874/movie_max_vp9.webm?t=1603301348"></video></li>
+							<li><strong>사용자평가</strong> 복합적</li>
+						</ul>
+					</li>
+					<li class="img3">
+						<a href="sangsae.html">
+							<img src="images/con1-3.jpg" alt="아크서바이벌" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Ark Survival Evolved
+								</p>
+								<p class="price">
+									 48,000
+								</p>
+							</div>
+						</a>
+						<ul class="over-pg">
+							<li><h3>Ark Survival Evolved</h3></li>
+							<li>출시일 2017 년 8 월 28 일</li>
+							<li><video id="movie_256693939" playsinline="true" class="highlight_player_item highlight_movie" poster="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie.293x165.jpg?t=1508277163" preload="none" src="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie480.webm?t=1508277163" data-hd-src="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie_max.webm?t=1508277163"></video></li>
+							<li><strong>사용자평가</strong> 매우 긍정적</li>
+						</ul>
+					</li>
+					<li class="img4">
+						<a href="#">
+							<img src="images/con1-4.jpg" alt="데드 바이 데드라이트" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Dead by Daylight
+								</p>
+								<p class="price">
+									 10,000
+								</p>
+							</div>
+						</a>
+						<ul class="over-pg">
+							<li><h3>Dead by Daylight</h3></li>
+							<li>출시일 2016 년 6 월 14 일</li>
+							<li><video id="movie_256811866" playsinline="true" class="highlight_player_item highlight_movie" poster="https://steamcdn-a.akamaihd.net/steam/apps/256811866/movie.293x165.jpg?t=1606845056" preload="none" src="https://steamcdn-a.akamaihd.net/steam/apps/256811866/movie480_vp9.webm?t=1606845056" data-hd-src="https://steamcdn-a.akamaihd.net/steam/apps/256811866/movie_max_vp9.webm?t=1606845056"></video></li>
+							<li><strong>사용자평가</strong> 매우 긍정적</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-5.jpg" alt="태권7" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									TEKKEN 7
+								</p>
+								<p class="price">
+									 31,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-6.jpg" alt="그랜드 드리프트 오토" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Grand Theft Auto V
+								</p>
+								<p class="price">
+									 49,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-7.jpg" alt="레인보우 식스" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Tom Clancy's Rainbow<br>
+									Six Siege
+								</p>
+								<p class="price">
+									47,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-8.jpg" alt="몬스터헌터" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Monster Hunter World<br>
+									: Iceborne
+								</p>
+								<p class="price">
+									33,800
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-9.jpg" alt="래프트" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Raft
+								</p>
+								<p class="price">
+									12,800
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-10.jpg" alt="어몽어스" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									AMONG US
+								</p>
+								<p class="price">
+									10,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-11.jpg" alt="데빌메이크라이5" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Devil May Cry 5
+								</p>
+								<p class="price">
+									21,600
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con1-12.jpg" alt="드래곤볼파이터z" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									DRAGON BALL fitherZ
+								</p>
+								<p class="price">
+									43,000
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="box2">
+				<h2>신규게임</h2>
+				<ul class="box-img">
+					<li>
+						<a href="#">
+							<img src="images/con2-1.jpg" alt="풋볼 매니저 2021" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									FOOTBALL MANAGER 2021
+								</p>
+								<p class="price">
+									 45,300
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-2.jpg" alt="에이펙스 레전드" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Apex 레전드™
+								</p>
+								<p class="price">
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-3.jpg" alt="피닉스 포인트" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Phoenix Point<br>
+									: Year One Edition
+								</p>
+								<p class="price">
+									 58,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-4.jpg" alt="비사지" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Visage
+								</p>
+								<p class="price">
+									 32,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-5.jpg" alt="천수의 사쿠나히메" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									천수의 사쿠나히메
+								</p>
+								<p class="price">
+									 50,800
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-6.jpg" alt="엠파이어 오브 씬" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Empire of Sin
+								</p>
+								<p class="price">
+									 36,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-7.jpg" alt="갱비스트" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Gang Beasts
+								</p>
+								<p class="price">
+									14,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-8.jpg" alt="레드데드온라인" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Red Dead Online
+								</p>
+								<p class="price">
+									5,500
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-9.jpg" alt="레프트 포 데드2" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Left 4 Dead 2
+								</p>
+								<p class="price">
+									8,500
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-10.jpg" alt="프로젝트 윙맨" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Project Wingman
+								</p>
+								<p class="price">
+									20,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-11.jpg" alt="파이어파이팅 시뮬레이터" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Firefighting Simulator<br>
+									-The Squad
+								</p>
+								<p class="price">
+									27,000
+								</p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con2-12.jpg" alt="폴아웃76" width="300" height="190">
+							<div class="box-text">
+								<p class="g-n">
+									Fallout 76
+								</p>
+								<p class="price">
+									44,500
+								</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="box3">
+				<h2>이번주 할인 게임</h2>
+				<ul class="box-img">
+					<li>
+						<a href="#">
+							<img src="images/con3-1.jpg" alt="스폰지밥 배틀 비키니 바텀" width="500" height="300">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con3-2.jpg" alt="워킹데드 세인츠 앤 시널" width="500" height="300">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="images/con3-3.jpg" alt="그리드 폴" width="500" height="300">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="foot">
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="200" height="40"></a></h2>
+			<hr>
+			<p>
+				㈜JOPRE 대표이사 이민형 경기도 안양시 만안구 만안로 000번길 0 전화 : 1588-6668 팩스 : 031-123-4567<br>
+				E-mail : JOPRE@help.co.kr 사업자등록번호 : 123-38-33675호 통신판매업 신고번호 : 제2013-경기안양-6668호 사업자정보확인<br>
+				© JOPRE Korea Corporation All Rights Reserved.
+			</p>
+			<hr>
+			<p>
+				개인정보 보호정책 | 사용권 | JOPRE 이용 약관 | 회사소개 | 광고문의 | 채용안내 | 환불 안내
+			</p>
+			</div>
+		</footer>
+		</div>
+		<!--wrapper end-->
+	</body>
+</html>

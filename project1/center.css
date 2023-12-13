@@ -1,0 +1,62 @@
+@charest "UTF-8";
+.box{width:1020px; height:120px; margin:0 auto; margin-top:90px; margin-bottom:10px; background:#f3932e;}
+
+.box>h2{color:#fff; float:left; font-size:48px; padding:26px 30px;}
+
+.box>.con-search{width:500px; height:50px; background:#fff; display:block; float:left; margin-top:36px; }
+
+.box>.con-search>p{display:inline; padding-left:16px; line-height:50px;}
+
+.box>.con-search>input{font-size:20px; border:none; text-indent:20px; width:440px; height:50px; outline:none;}
+
+.box>.con-search>a{float:right; padding-right:10px; padding-top:4px;}
+
+button:nth-child(3){width:180px; height:80px; float:right; background:#292860; border-radius:10px 10px; margin-top:20px; margin-right:30px;}
+
+button:nth-child(3)>a{color:#fff; font-size:20px; padding:24px;  line-height:80px;}
+
+.con-nav{width:1020px; height:80px; border-bottom:1px solid #333; margin:0 auto; margin-bottom:20px;}
+
+.con-nav-left{float:left;}
+
+.con-nav-left>li{float:left; padding:24px 30px;}
+
+.con-nav-left>li:nth-child(1)>a{color:#f3932e;}
+
+.con-nav-left>li>a{font-size:20px; color:#000;}
+
+.con-nav-left>li>a:hover{color:#f3932e;}
+
+.con-nav-right{float:right;}
+
+.con-nav-right>li{float:left; padding-top:30px; padding-right:20px;}
+
+.con-nav-right>li>a{font-size:16px; color:#000;}
+
+.con-nav-right>li>a:hover{color:#f3932e;}
+
+.caution{width:1020px; height:100px; margin:0 auto; background:#f4f5d8; margin-bottom:30px;}
+
+.caution>h2{float:left; padding:10px 20px;}
+
+.f-s1{font-size:28px; color:#75541b; padding-top:10px;}
+
+.f-s2{font-size:16px; color:#75541b; padding-top:10px;}
+
+table{margin:0 auto; border-collapse:collapse; width:1020px; margin-bottom:50px;}
+
+th,td{padding:16px 10px; border-bottom:1px solid #000; text-align:center;}
+
+.title-text{text-align:left;}
+
+.title-text>a{color:#000; font-size:16px;}
+
+.title-text>a:hover{color:#e02c26; border-bottom:1px solid #e02c26;}
+
+.pageN{padding:20px; margin-left:680px; margin-bottom:90px;}
+
+.pageN>a{color:#000; margin-left:6px;}
+
+.pageN>a:nth-child(2){color:#f3932e;}
+
+.pageN>a:hover{color:#fc2d2d;}

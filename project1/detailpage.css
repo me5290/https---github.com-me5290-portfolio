@@ -1,0 +1,149 @@
+@charest "UTF-8";
+#customcontent{width:1020px; 
+					   height:auto; 
+					   margin:0 auto;
+					  }
+
+.proudbar{width:1020px; 
+	      height:3px; 
+		  background:gray; 
+		  margin-top:90px;
+		 }
+
+.proudbar2{width:1020px;
+		   height:1px; 
+		   background:gray; 
+		   margin-top:100px;
+		  }
+
+.proudbar3{width:1020px; height:1px; background:#e6e6e6; margin-top:30px;}
+
+.proudgellary{margin-top:30px; }
+
+.proudgellary {font-size:18px; font-weight:bold;}
+
+#gellarycontent{width:1020px; height:auto; /*border:1px solid #000;*/}
+
+.titlename{width:1020px; height:60px;/* border:1px solid #000; */font-size:48px; font-weight:bold; /*margin-top:90px;*/ text-align:center;}
+
+.dateid{margin-left:735px; font-size:18px; margin-top:20px;}
+
+#pic{text-align:center; margin-top:20px;}
+
+.text {width:700px; height:auto;   margin:0 auto; margin-top:30px; margin-bottom:30px;}
+
+.header3 img{margin-left:36px; margin-top:-10px;}
+
+.imgeswap img:last-child{display:none} 
+   
+.imgeswap:hover img:first-child{display:none} 
+   
+.imgeswap:hover img:last-child{display:inline-block}
+
+#comu{width:1020px; height:1000px; /*border:1px solid gray;*/ margin-top:30px;}
+
+#comu > #box1 .comutext1 > p > a{color:black; display:inline; float:left; margin-top:26px; margin-left:20px; font-weight:bold;}							      
+
+#comu > #box1 .comutext1-1 > p > a{color:black; display:inline; float:left; margin-top:26px; margin-left:5px;}
+
+.gouficon{margin-left:20px; float:left;}
+
+#box2 > .heart > img{float:left; clear:both; margin-left:20px; margin-top:30px;}
+
+#box2 > .like > p {float:left; margin-left:20px; margin-top:32px;}
+
+#box2 > .dapgl > img{float:left;  margin-left:20px; margin-top:30px;}
+
+#box2 > .detgl > p {float:left; margin-left:20px; margin-top:29px;}
+
+#box2 > .share > p {float:left; margin-left:650px; margin-top:29px;}
+
+#box2 > .report > p {float:left; margin-left:20px; margin-top:29px;}
+
+.hdetgl {float:left; font-size:22px; font-weight:bold; margin-left:20px;}
+
+.reset{float:left; margin-left:30px;}
+
+.altdet{float:left; margin-left:620px;}
+
+.albutton{float:left; margin-left:20px;}
+
+#box4{margin-top:25px;  width:1020px; height:70px;}
+
+#box6 {margin-top:30px;}
+
+#box6 .one{float:right;}
+
+
+.commentbox{ margin:30px 0 0 20px; }
+
+.commentbox2{ margin:30px 0 0 20px; }
+
+.commentbox2 > img {float:left; margin:0 15px 0 30px;}
+
+.commentbox2 > .date {margin-left:200px;}
+
+.commentbox > img {float:left; margin-right:15px;}
+
+.nicname {font-weight:bold;}
+
+.comment {margin-top:10px;}
+
+.inbox{float:left; margin-top:15px; }
+
+.date {clear:both; padding-top:20px; margin-left:80px;}
+
+
+.writecome{width:1020px; height:100px; margin:0 auto; margin-top:50px; font-size:16px;} 
+
+input[type="submit"] {width:300px; margin-left:722px; margin-bottom:90px; }
+
+#buybutton {float:left;}
+
+#bagbutton {float:left;}
+
+#buybutton {margin:90px 0 100px 400px;}
+
+button.one {margin:30px 0 50px 20px;}
+
+
+button.one{
+		width:120px;
+		height: 40px;
+		color:#fff;
+		background: #f7943a;
+		font-size: 16px;
+		border:none;
+		/*border-radius: 20px;*/
+		/*box-shadow: 0 4px 16px rgba(0,79,255,0.3);*/
+		transition:0.3s;
+		/*position: absolute;*/
+		left:50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+	}
+ button.one:focus {outline:0;}
+		
+				
+
+ button.one:hover {
+			/*background: rgba(0,79,255,0.9);*/
+			cursor: pointer;
+			box-shadow: 0 2px 4px rgba(0,79,255,0.6);
+			background: #ea3834;
+			}
+
+label, span {margin-top:-26px; }
+
+div.toggleWrap { position: relative; width: 300px; margin: 0 auto; padding: 0 10px; background: #1F3766;  float:right;} 
+
+input { display: none; }
+
+.toggleWrap > div { position: absolute; top: 0; bottom: 0; right: 10px; width: 34px; height: 20px; margin-top: 5px; } 
+
+label { display: block; width: 50px; height: 25px; box-sizing: border-box; border-radius: 36px; border: 1px solid #e5e5e5; background: #fff; transition: all 0.3s ease; } 
+
+label > span { position: absolute; top: 3px; left: 3px; display: block; width: 19px; height: 18px; border-radius: 50%; box-sizing: border-box; box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25), 0 3px 3px 0 rgba(0, 0, 0, 0.15); transition: all 0.3s cubic-bezier(0.275, -0.45, 0.725, 1.45); background: #fff; }
+
+input:active + div label, input:checked + div label { border: 10px solid #f7943a; box-shadow: 0 0 5px #f7943a; } 
+input:active + div label > span, input:checked + div label > span { left: 30px; }

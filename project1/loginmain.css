@@ -1,0 +1,87 @@
+@charest "UTF-8";
+a{text-decoration:none;
+	color:black;}
+	
+#wrap{margin:0 auto; 
+		  margin-top:150px;
+		  margin-bottom:150px;
+		  width:430px;
+		  height:600px;
+		  background:white;
+		  border:1px solid #dedede;}
+
+#wrap h2{text-align:center; margin:10px 0; margin:20px 0 30px 0; }
+
+#wrap p{text-align:center; font-size:16px; margin-bottom:70px;}
+
+.namePass{padding-top:30px;}
+
+.u-name label{display:none;}
+
+.u-pass label{display:none;}
+	
+.u-name>input,.u-pass>input{display:block;
+								width:372px;
+								height:30px;
+								border:1px solid #ccc;
+								text-indent:20px;
+								margin:0 auto;
+								margin-left:18px;
+								margin-bottom:20px;
+								font-size:15px;}
+	
+.first-3>input[type="submit"]{width:392px;
+									height:50px;
+									background:#cccccb;
+									border:none;
+									color:#fff;
+									font-size:18px;
+									margin:0 auto;
+									margin-left:19px;
+									font-weight:bold;}
+
+.first-3>input[type="submit"]:hover{background:#e02c26;}
+
+.checkLeft{float:left; /*background:blue;*/ margin:14px 0 14px 30px;}
+
+.checkLeft #id{float:right; display:inline-block; width:100px; margin:4px 0 0 -30px;}
+
+.checkRight{float:right; /*background:yellow;*/ margin:14px 0 14px 5px;}
+
+.checkRight #id{float:right; display:inline-block; width:100px; margin:4px 0 0 -30px;}
+
+
+	
+#last{margin:0 18px;}
+	
+#last>.u-idpw{float:left;
+					width:196px;
+					height:59px;
+					background:#cccccb;
+					border:1px solid #fff;}
+
+#last>.u-idpw a:hover{background:#f7922c}
+
+#last>.u-idpw a,#last>.join-text a{color:#fff;}
+
+#last>.u-idpw a{margin:0 auto;
+					padding:20px 27px;
+					position:absolute;}
+
+#last>.join-text{float:right;
+					width:162px;
+					height:59px;
+					background:#cccccb;
+					border:1px solid #fff;}
+
+#last>.join-text a{margin:0 auto;
+					padding:20px 51px;
+					position:absolute;}
+
+#last>.join-text a:hover{background:#009444;}
+
+.snsname{height:50px; margin-top:400px; text-align:center}
+
+.sns li{float:left; margin-left:62px; margin-top:30px;}
+
+input{font-size:16px; width:325px; padding:10px; border:0px; outline:none; float:left;}

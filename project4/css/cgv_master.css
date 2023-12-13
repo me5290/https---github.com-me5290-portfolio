@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+	*{margin:0; padding:0; box-sizing: border-box;}
+	ul,ol{list-style:none; color:#000;}
+	a{text-decoration:none;}
+	nav{
+		width:100%;
+		height:120px;
+		background:#fff;
+		position:fixed;
+	}
+	.nav_wrap{
+		width:1200px;
+		height:120px;
+		margin:0 auto;
+		position:relative;
+	}
+	.nav_wrap>h2{
+		width:195px;
+		height:120px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.nav_wrap>h2>a>img{
+		width:195px;
+		height:120px;
+	}
+	.lnb{
+		position:absolute;
+		left:200px;
+		bottom:20px;
+	}
+	.lnb>li{
+		float:left;
+		position:relative;
+	}
+	.lnb>li>a{
+		font-size:24px;
+		font-weight:bold;
+		color:#000;
+		padding:20px 70px;
+	}
+	.lnb>li>a:hover{
+		color:red;
+	}
+	.sub_nav{
+		position:absolute;
+		display:none;
+		z-index:200;
+		width:100%;
+		height:300px;
+		background:red;
+	}
+	.sub_wrap{
+		width:800px;
+		height:300px;
+		margin:0 auto;
+	}
+	.sub_wrap>ul{float:left; height:300px;}
+	.sub_nav1{width:188px; height:40px;}
+	.sub_nav2{width:188px; height:40px;}
+	.sub_nav3{width:188px; height:40px;}
+	.sub_nav4{width:212px; height:40px;}
+	.sub_wrap>ul>li{
+		padding:15px 0;
+		text-align:center;
+	}
+	.sub_wrap>ul>li>a{
+		padding:20px;
+		font-size:16px;
+		color:#fff;
+		text-align:center;
+	}
+	.sub_wrap>ul:hover{background:#fff;}
+	.sub_wrap>ul:hover li a{
+		color:#666;
+	}
+	.sub_wrap>ul>li>a:hover{
+		color:red;
+		text-decoration:underline;
+	}
+	nav:hover .sub_nav{display:block; top:120px;}
+	.gnb{
+		position:absolute;
+		right:10px;
+		top:16px;
+	}
+	.gnb>li{
+		float:left;
+		padding:4px 8px;
+		border:1px solid #333;
+		border-radius:10px;
+		margin-right:10px;
+	}
+	.gnb>li>a{
+		color:#000;
+		font-size:12px;
+	}
+	#search{
+		position:absolute;
+		right:6px;
+		bottom:10px;
+		width:200px;
+		height:60px;
+		clear:both;
+		text-indent:-99999px;
+		float:left;
+	}
+	.side-search{
+		clear:both;
+		display:block;
+	}
+	.tbox{
+		width:140px;
+		height:30px;
+		font-size:12px;
+		margin-left:10px;
+		border:1px solid #666;
+		text-indent:4px;
+		float:left;
+	}
+	.sbtn{
+		width:40px;
+		height:30px;
+		background:#000;
+		border:none;
+	}
+	.sbtn>a{
+		padding:4px;
+		color:#fff;
+		font-weight:bold;
+	}
+	.sbtn>a:hover{
+		color:red;
+		font-weight:bold;
+	}
+	#slide{
+		width:100%;
+		height:1000px;
+		background:#999;
+	}
+	section{
+		width:100%;
+		height:2000px;
+	}
+}
+@media screen and (max-width:767px){
+
+}

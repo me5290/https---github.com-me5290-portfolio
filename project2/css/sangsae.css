@@ -1,0 +1,384 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+	section{
+		background: linear-gradient(to top,#06b1bf,#1d448a);
+	}
+	.down_btn>img{
+		width:160px;
+		height:90px;
+		margin:60px 450px 0 450px;
+	}
+	.box1{
+		width:1100px;
+		margin:0 auto;
+		padding-top:140px;
+		padding-bottom:30px;
+	}
+	.box1>span>a{
+		color:#333;
+	}
+	.box1>span>a:hover{
+		color:#fff;
+		text-decoration:underline;
+	}
+	.box1>h2{
+		margin:10px 0;
+		font:bold 34px "Malgun Gothic";
+	}
+	.box2{
+		width:1100px;
+		margin:0 auto;
+		margin-top:100px;
+		position:relative;
+	}
+	.box2>img{
+		float:left;
+		margin-bottom:100px;
+	}
+	.box2>.game_title{
+		position:absolute;
+		right:110px;
+		top:10px;
+		font:bold 28px "Malgun Gothic";
+		line-height:80px;
+	}
+	.box2>.buy{
+		position:absolute;
+		right:60px;
+		top:300px;
+	}
+	.buy_btn{
+		border:1px solid #000;
+		width:120px;
+		height:40px;
+		margin-right:10px;
+		font:bold 18px "Malgun Gothic";
+	}
+	.buy_btn>a{
+		padding:14px 20px;
+	}
+	.buy_btn:hover{
+		background:#666;
+		color:#fff;
+	}
+	.game_text{
+		width:1100px;
+		height:400px;
+		overflow:scroll;
+		background:#333;
+		color:#fff;
+		border:3px solid #000;
+	}
+	.game_text>img{
+		margin-left:220px;
+	}
+	.box3{
+		width:1106px;
+		margin:0 auto;
+		margin-top:140px;
+		position:relative;
+		padding-bottom:160px;
+	}
+	.dlc{
+		border:3px solid #000;
+	}
+	.dlc:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.dlc>ul>li{
+		float:left;
+		padding:20px 13px;
+	}
+	.dlc>ul>li>a>img{
+		width:340px;
+		height:150px;
+	}
+	.dlc>ul>li>a>p{
+		font:bold 16px "Malgun Gothic";
+		color:#fff;
+		margin-top:8px;
+	}
+	.box3>h3{
+		padding-top:30px;
+		padding-bottom:10px;
+	}
+	.similar{
+		border:3px solid #000;
+	}
+	.similar:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.similar>ul>li{
+		float:left;
+		padding:20px 13px;
+	}
+	.similar>ul>li>a>img{
+		width:340px;
+		height:150px;
+	}
+	.similar>ul>li>a>p{
+		font:bold 22px "Malgun Gothic";
+		color:#fff;
+		margin-top:8px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	section{
+		background: linear-gradient(to top,#06b1bf,#1d448a);
+	}
+	.down_btn>img{
+		width:100px;
+		height:50px;
+		margin:60px 310px 0 310px;
+	}
+	.box1{
+		width:95%;
+		margin:0 auto;
+		padding-top:80px;
+	}
+	.box1>span>a{
+		color:#000;
+	}
+	.box1>span>a:hover{
+		color:#fff;
+		text-decoration:underline;
+	}
+	.ark_video{
+		width:100%;
+	}
+	.box1>h2{
+		margin:10px 0;
+		font:bold 32px "Malgun Gothic";
+	}
+	.box2{
+		width:95%;
+		margin:0 auto;
+		margin-top:80px;
+		position:relative;
+	}
+	.box2>img{
+		width:340px;
+		height:220px;
+		float:left;
+		margin-bottom:100px;
+	}
+	.box2>.game_title{
+		position:absolute;
+		right:70px;
+		top:0px;
+		font:bold 22px "Malgun Gothic";
+		line-height:40px;
+	}
+	.box2>.buy{
+		position:absolute;
+		right:30px;
+		top:180px;
+	}
+	.buy_btn{
+		border:1px solid #000;
+		width:90px;
+		height:30px;
+		margin-right:10px;
+		font:bold 14px "Malgun Gothic";
+	}
+	.buy_btn>a{
+		padding:14px 10px;
+	}
+	.buy_btn:hover{
+		background:#666;
+		color:#fff;
+	}
+	.game_text{
+		width:100%;
+		height:260px;
+		overflow:scroll;
+		background:#333;
+		color:#fff;
+		border:3px solid #000;
+	}
+	.game_text>img{
+		margin-left:60px;
+	}
+	.box3{
+		width:95%;
+		margin:0 auto;
+		margin-top:80px;
+		position:relative;
+		padding-bottom:90px;
+	}
+	.dlc{
+		border:3px solid #000;
+	}
+	.dlc:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.dlc>ul>li{
+		float:left;
+		padding:20px 10px;
+	}
+	.dlc>ul>li>a>img{
+		width:220px;
+		height:90px;
+	}
+	.dlc>ul>li>a>p{
+		font:bold 16px "Malgun Gothic";
+		color:#fff;
+		margin-top:8px;
+	}
+	.box3>h3{
+		padding-top:30px;
+	}
+	.similar{
+		border:3px solid #000;
+	}
+	.similar:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.similar>ul>li{
+		float:left;
+		padding:20px 10px;
+	}
+	.similar>ul>li>a>img{
+		width:220px;
+		height:90px;
+	}
+	.similar>ul>li>a>p{
+		font:bold 18px "Malgun Gothic";
+		color:#fff;
+		margin-top:8px;
+	}
+}
+@media screen and (max-width:767px){
+	section{
+		background: linear-gradient(to top,#06b1bf,#1d448a);
+		padding:0 20px;
+	}
+	.down_btn>img{
+		width:50px;
+		height:20px;
+		margin:60px 140px 0 140px;
+	}
+	.box1{
+		width:99%;
+		margin:0 auto;
+		padding-top:40px;
+	}
+	.box1>span>a{
+		color:#000;
+		font:bold 14px "Malgun Gothic";
+	}
+	.box1>span>a:hover{
+		color:#fff;
+		text-decoration:underline;
+	}
+	.ark_video{
+		width:100%;
+	}
+	.box1>h2{
+		margin:10px 0;
+		font:bold 28px "Malgun Gothic";
+	}
+	.box2{
+		width:99%;
+		margin:0 auto;
+		margin-top:40px;
+	}
+	.box2>img{
+		width:100%;
+		height:auto;
+		margin-bottom:30px;
+	}
+	.box2>.game_title{
+		font:bold 18px "Malgun Gothic";
+		line-height:20px;
+		text-align:center;
+	}
+	.box2>.buy{
+		margin:20px 10px;
+	}
+	.buy_btn{
+		border:1px solid #000;
+		width:90px;
+		height:30px;
+		margin-right:10px;
+		font:bold 14px "Malgun Gothic";
+	}
+	.buy_btn>a{
+		padding:14px 10px;
+	}
+	.buy_btn:hover{
+		background:#666;
+		color:#fff;
+	}
+	.game_text{
+		width:100%;
+		height:180px;
+		overflow:scroll;
+		background:#333;
+		color:#fff;
+		border:3px solid #000;
+		font-size:14px;
+	}
+	.game_text>img{
+		margin-left:40px;
+		width:300px;
+		height:80px;
+	}
+	.box3{
+		width:99%;
+		margin:0 auto;
+		margin-top:40px;
+		padding-bottom:90px;
+	}
+	.dlc{
+		border:3px solid #000;
+	}
+	.dlc:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.dlc>ul>li{
+		padding:10px 4px;
+	}
+	.dlc>ul>li>a>img{
+		width:100%;
+		height:160px;
+	}
+	.dlc>ul>li>a>p{
+		font:bold 16px "Malgun Gothic";
+		color:#fff;
+		margin-bottom:8px;
+	}
+	.box3>h3{
+		padding-top:30px;
+	}
+	.similar{
+		border:3px solid #000;
+	}
+	.similar:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	.similar>ul>li{
+		padding:10px 4px;
+	}
+	.similar>ul>li>a>img{
+		width:100%;
+		height:160px;
+	}
+	.similar>ul>li>a>p{
+		font:bold 18px "Malgun Gothic";
+		color:#fff;
+		margin-bottom:8px;
+	}
+}

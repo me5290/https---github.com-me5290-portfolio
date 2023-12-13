@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+	section{
+		background: linear-gradient(to top,#fff,#06b1bf);
+	}
+	.mv-bg{
+		width:100%;
+		background:#000;
+	}
+	.mv{
+		width:100%;
+	}
+	.content-box1{
+		width:1100px;
+		margin:0 auto;
+		padding-top:60px;
+	}
+	.content-box1>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:40px 0 10px 40px;
+	}
+	table{
+		margin:0 auto;
+		border-collapse:collapse;
+		width:1020px;
+		margin-bottom:50px;
+	}
+	td{
+		padding:16px 10px;
+		border-bottom:1px solid #000;
+		text-align:center;
+	}
+	tr:nth-child(1){
+		border-top:3px solid #000;
+	}
+	tr:nth-child(5){
+		border-bottom:3px solid #000;
+	}
+	.title-text{text-align:left;}
+	.title-text>a{
+		color:#000;
+		font-size:16px;
+	}
+	.title-text>a:hover{
+		color:#fff;
+		border-bottom:1px solid #fff;
+	}
+	.content-box2{
+		width:1100px;
+		margin:0 auto;
+		margin-top:80px;
+	}
+	.content-box2>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:40px 0 10px 40px;
+	}
+	.content-box2>a>img{
+		margin-left:40px;
+		border-top:3px solid #000;
+		padding-top:20px;
+	}
+	.content-box2>a:nth-child(3)>img{
+		border:none;
+		margin-top:20px;
+	}
+	.content-box3{
+		width:1100px;
+		margin:0 auto;
+		margin-top:80px;
+		margin-bottom:120px;
+	}
+	.content-box3>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:40px 0 10px 40px;
+	}
+	.gallery1{
+		width:1020px;
+		margin:0 auto;
+		padding:10px;
+		border-top:3px solid #000;
+		position: relative;
+	}
+	.gallery_title1{
+		position:absolute;
+		top:30px;
+		left:380px;
+		font:bold 24px "Malgun Gothic";
+	}
+	.gallery_title1:hover{
+		text-decoration:underline;
+	}
+	.gallery_text1{
+		position:absolute;
+		bottom:80px;
+		left:380px;
+		font:16px "Malgun Gothic";
+	}
+	.gallery2{
+		width:1020px;
+		margin:0 auto;
+		padding:10px;
+		border-top:1px solid #ccc;
+		clear:both;
+		position: relative;
+		border-bottom:3px solid #000;
+	}
+	.gallery_title2{
+		position:absolute;
+		top:30px;
+		left:380px;
+		font:bold 24px "Malgun Gothic";
+	}
+	.gallery_title2:hover{
+		text-decoration:underline;
+	}
+	.gallery_text2{
+		position:absolute;
+		bottom:80px;
+		left:380px;
+		font:16px "Malgun Gothic";
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	.mv-bg{
+		width:100%;
+		background:#000;
+	}
+	.mv{
+		width:100%;
+	}
+	section{
+		background: linear-gradient(to top,#fff,#06b1bf);
+	}
+	.mv-bg{
+		width:100%;
+		background:#000;
+	}
+	.mv{
+		width:100%;
+	}
+	.content-box1{
+		width:700px;
+		margin:0 auto;
+		padding-top:40px;
+	}
+	.content-box1>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	table{
+		margin:0 auto;
+		border-collapse:collapse;
+		width:700px;
+		margin-bottom:50px;
+	}
+	td{
+		padding:16px 10px;
+		border-bottom:1px solid #000;
+		text-align:center;
+	}
+	tr:nth-child(1){
+		border-top:3px solid #000;
+	}
+	tr:nth-child(5){
+		border-bottom:3px solid #000;
+	}
+	.title-text{text-align:left;}
+	.title-text>a{
+		color:#000;
+		font-size:20px;
+	}
+	.title-text>a:hover{
+		color:#fff;
+		border-bottom:1px solid #fff;
+	}
+	.content-box2{
+		width:700px;
+		margin:0 auto;
+		margin-top:40px;
+	}
+	.content-box2>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	.content-box2>a>img{
+		border-top:3px solid #000;
+		padding-top:20px;
+		width:700px;
+		height:360px;
+	}
+	.content-box2>a:nth-child(3)>img{
+		border:none;
+		margin-top:20px;
+	}
+	.content-box3{
+		width:700px;
+		margin:0 auto;
+		margin-top:40px;
+		margin-bottom:90px;
+	}
+	.content-box3>h3{
+		font:bold 28px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	.gallery1{
+		width:700px;
+		margin:0 auto;
+		padding:10px;
+		border-top:3px solid #000;
+		position: relative;
+	}
+	.gallery1>a>img{
+		width:240px;
+		height:140px;
+	}
+	.gallery2>a>img{
+		width:240px;
+		height:140px;
+	}
+	.gallery_title1{
+		position:absolute;
+		top:20px;
+		left:300px;
+		font:bold 24px "Malgun Gothic";
+	}
+	.gallery_title1:hover{
+		text-decoration:underline;
+	}
+	.gallery_text1{
+		position:absolute;
+		bottom:50px;
+		left:300px;
+		font:16px "Malgun Gothic";
+	}
+	.gallery2{
+		width:700px;
+		margin:0 auto;
+		padding:10px;
+		border-top:1px solid #ccc;
+		clear:both;
+		position: relative;
+		border-bottom:3px solid #000;
+	}
+	.gallery_title2{
+		position:absolute;
+		top:20px;
+		left:300px;
+		font:bold 24px "Malgun Gothic";
+	}
+	.gallery_title2:hover{
+		text-decoration:underline;
+	}
+	.gallery_text2{
+		position:absolute;
+		bottom:50px;
+		left:300px;
+		font:16px "Malgun Gothic";
+	}
+}
+@media screen and (max-width:767px){
+	section{
+		background: linear-gradient(to top,#fff,#06b1bf);
+	}
+	.mv-bg{
+		width:100%;
+		background:#000;
+	}
+	.mv{
+		width:100%;
+	}
+	.content-box1{
+		width:350px;
+		margin:0 auto;
+		padding-top:60px;
+	}
+	.content-box1>h3{
+		font:bold 18px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	table{
+		margin:0 auto;
+		border-collapse:collapse;
+		width:350px;
+		margin-bottom:50px;
+	}
+	td{
+		padding:10px 6px;
+		border-bottom:1px solid #000;
+		text-align:center;
+		font:12px "Malgun Gothic";
+	}
+	tr:nth-child(1){
+		border-top:3px solid #000;
+	}
+	tr:nth-child(5){
+		border-bottom:3px solid #000;
+	}
+	.title-text{text-align:left;}
+	.title-text>a{
+		color:#000;
+		font-size:16px;
+	}
+	.title-text>a:hover{
+		color:#fff;
+		border-bottom:1px solid #fff;
+	}
+	.content-box2{
+		width:350px;
+		margin:0 auto;
+		margin-top:30px;
+	}
+	.content-box2>h3{
+		font:bold 18px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	.content-box2>a>img{
+		border-top:3px solid #000;
+		padding-top:20px;
+		width:350px;
+		height:160px;
+	}
+	.content-box2>a:nth-child(3)>img{
+		border:none;
+		margin-top:4px;
+	}
+	.content-box3{
+		width:350px;
+		margin:0 auto;
+		margin-top:30px;
+		margin-bottom:10px;
+	}
+	.content-box3>h3{
+		font:bold 18px "Malgun Gothic";
+		margin:10px 0 10px 10px;
+	}
+	.gallery1{
+		margin:0 auto;
+		padding:10px;
+		border-top:3px solid #000;
+		position: relative;
+	}
+	.gallery1>a>img{
+		width:120px;
+		height:70px;
+	}
+	.gallery2>a>img{
+		width:120px;
+		height:70px;
+	}
+	.gallery_title1{
+		position:absolute;
+		top:10px;
+		left:150px;
+		font:bold 14px "Malgun Gothic";
+	}
+	.gallery_title1:hover{
+		text-decoration:underline;
+	}
+	.gallery_text1{
+		position:absolute;
+		bottom:30px;
+		left:150px;
+		font:10px "Malgun Gothic";
+	}
+	.gallery2{
+		margin:0 auto;
+		padding:10px;
+		border-top:1px solid #ccc;
+		clear:both;
+		position: relative;
+		border-bottom:3px solid #000;
+	}
+	.gallery_title2{
+		position:absolute;
+		top:10px;
+		left:150px;
+		font:bold 14px "Malgun Gothic";
+	}
+	.gallery_title2:hover{
+		text-decoration:underline;
+	}
+	.gallery_text2{
+		position:absolute;
+		bottom:30px;
+		left:150px;
+		font:10px "Malgun Gothic";
+	}
+}

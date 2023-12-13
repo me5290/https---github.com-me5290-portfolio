@@ -1,0 +1,83 @@
+@charest "UTF-8";
+#customcontent{width:1020px; height:auto;  margin:0 auto;}
+
+.proudbar{width:1020px; height:3px; background:gray; margin-top:90px;}
+
+.proudbar2{width:1020px; height:1px; background:gray; margin-top:100px;}
+
+.proudbar3{width:1020px; height:1px; background:#e6e6e6; margin-top:30px;}
+
+.proudgellary{margin:30px 0 0 50px; }
+
+.proudgellary h2{font-size:18px; font-weight:bold;}
+
+#gellarycontent{width:1020px; height:auto; /*border:1px solid #000;*/}
+
+.titlename{width:1020px; height:60px;/* border:1px solid #000; */font-size:48px; font-weight:bold; /*margin-top:90px;*/ text-align:center;}
+		
+.dateid{margin-left:700px; font-size:18px; margin-top:20px;}
+
+#pic{text-align:center; margin-top:20px;}
+		
+.text {width:700px; height:auto;   margin:0 auto; margin-top:30px; margin-bottom:30px;}
+		
+.header3 img{margin-left:36px; margin-top:-10px;}
+
+.imgeswap img:last-child{display:none} 
+   
+.imgeswap:hover img:first-child{display:none} 
+   
+.imgeswap:hover img:last-child{display:inline-block}
+
+#comu{width:1020px; height:1000px; /*border:1px solid gray;*/ margin-top:30px;}
+
+#comu > #box1 .comutext1 > p > a{color:black; display:inline; float:left; margin-top:26px; margin-left:20px; font-weight:bold;}							      
+
+#comu > #box1 .comutext1-1 > p > a{color:black; display:inline; float:left; margin-top:26px; margin-left:5px;}
+
+.gouficon{margin-left:20px; float:left;}
+		
+#box2 > .heart > img{float:left; clear:both; margin-left:20px; margin-top:30px;}
+
+#box2 > .like > p {float:left; margin-left:20px; margin-top:29px;}
+
+#box2 > .dapgl > img{float:left;  margin-left:20px; margin-top:30px;}
+
+#box2 > .detgl > p {float:left; margin-left:20px; margin-top:29px;}
+
+#box2 > .share > p {float:left; margin-left:650px; margin-top:29px;}
+
+#box2 > .report > p {float:left; margin-left:20px; margin-top:29px;}
+
+.hdetgl {float:left; font-size:22px; font-weight:bold; margin-left:20px;}
+		
+.reset{float:left; margin-left:30px;}
+
+.altdet{float:left; margin-left:590px;}
+
+.albutton{float:left; margin-left:20px;}
+
+#box4{margin-top:25px;  width:1020px; height:70px;}
+
+		
+.commentbox{ margin:30px 0 0 20px; }
+
+.commentbox2{ margin:30px 0 0 20px; }
+
+.commentbox2 > img {float:left; margin:0 15px 0 100px;}
+
+.commentbox2 > .date {margin-left:200px;}
+
+.commentbox > img {float:left; margin-right:15px;}
+
+.nicname {font-weight:bold;}
+
+.comment {margin-top:10px;}
+
+.inbox{float:left; margin-top:15px; }
+
+.date {clear:both; padding-top:20px; margin-left:80px;}
+		
+.writecome{width:1020px; height:100px; margin:0 auto; margin-top:50px; font-size:16px;} 
+
+input[type="submit"] {width:300px; margin-left:722px; margin-bottom:90px; }

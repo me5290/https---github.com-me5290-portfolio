@@ -1,0 +1,310 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+	section{
+		height:1000px;
+	}
+	.mv-bg{
+		display:none;
+	}
+	.baegyung{
+		width:100%;
+		height:1000px;
+		position:relative;
+	}
+	.baegyung>video{
+		width:100%;
+		height:auto;
+		overflow:hidden;
+	}
+	#login{
+		width:600px;
+		height:700px;
+		margin:0 auto;
+		position:absolute;
+		top:100px;
+		left:630px;
+		border:3px solid #000;
+		background:#fff;
+	}
+	#login>h2{
+		font:bold 38px "Malgun Gothic";
+		text-align:center;
+		padding-top:60px;
+	}
+	.lg-ch{
+		width:340px;
+		margin:0 auto;
+		margin-top:80px;
+	}
+	.lg-ch:nth-child(2){
+		margin-top:20px;
+	}
+	#id{
+		width:340px;
+		height:40px;
+		font-size:24px;
+	}
+	#pw{
+		width:340px;
+		height:40px;
+		font-size:24px;
+	}
+	.box{
+		width:480px;
+		height:50px;
+		margin:0 auto;
+	}
+	.box>li{
+		width:140px;
+		height:50px;
+		border:3px solid #000;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		float:left;
+		margin:50px 5px;
+	}
+	.btn{
+		width:140px;
+		height:80px;
+		margin-left:224px;
+		background:#1b438b;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.btn>a{
+		color:#fff;
+		font:bold 24px "Malgun Gothic";
+		padding:30px;
+	}
+	.btn>a:hover{
+		color:#f2f414;
+	}
+	.at-lg{
+		display:inline-block;
+	}
+	#auto{
+		float:left;
+		margin:4px;
+		margin-left:70px;
+	}
+	.auto-login{
+		margin-top:50px;
+	}
+	.find-join{
+		margin:10px 0 0 70px;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	section{
+		height:774px;
+	}
+	.mv-bg{
+		display:none;
+	}
+	.baegyung{
+		width:100%;
+		height:774px;
+		position:relative;
+	}
+	.baegyung>video{
+		height:774px;
+	}
+	#login{
+		width:480px;
+		height:640px;
+		margin:0 auto;
+		position:absolute;
+		top:60px;
+		left:140px;
+		border:3px solid #000;
+		background:#fff;
+	}
+	#login>h2{
+		font:bold 38px "Malgun Gothic";
+		text-align:center;
+		padding-top:60px;
+	}
+	.lg-ch{
+		width:304px;
+		margin:0 auto;
+		margin-top:80px;
+	}
+	.lg-ch:nth-child(2){
+		margin-top:20px;
+	}
+	#id{
+		width:300px;
+		height:40px;
+		font-size:20px;
+	}
+	#pw{
+		width:300px;
+		height:40px;
+		font-size:20px;
+	}
+	.box{
+		width:460px;
+		height:44px;
+		margin:0 auto;
+	}
+	.box>li{
+		width:130px;
+		height:50px;
+		border:3px solid #000;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		float:left;
+		margin:40px 8px;
+	}
+	.box>li>a>img{
+		width:130px;
+		height:50px;
+	}
+	.btn{
+		width:140px;
+		height:80px;
+		margin-left:160px;
+		background:#1b438b;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.btn>a{
+		color:#fff;
+		font:bold 24px "Malgun Gothic";
+		padding:30px;
+	}
+	.btn>a:hover{
+		color:#f2f414;
+	}
+	.at-lg{
+		display:inline-block;
+	}
+	#auto{
+		float:left;
+		margin:4px;
+		margin-left:70px;
+	}
+	.auto-login{
+		margin-top:20px;
+	}
+	.find-join{
+		margin:10px 0 0 70px;
+	}
+}
+@media screen and (max-width:767px){
+	section{
+		height:617px;
+	}
+	.mv-bg{
+		display:none;
+	}
+	.baegyung{
+		width:100%;
+		height:617px;
+		position:relative;
+	}
+	.baegyung>video{
+		height:617px;
+	}
+	#login{
+		width:300px;
+		height:420px;
+		margin:0 auto;
+		position:absolute;
+		top:70px;
+		left:34px;
+		border:3px solid #000;
+		background:#fff;
+	}
+	#login>h2{
+		font:bold 24px "Malgun Gothic";
+		text-align:center;
+		padding-top:30px;
+	}
+	.lg-ch{
+		width:204px;
+		margin:0 auto;
+		margin-top:40px;
+	}
+	.lg-ch:nth-child(2){
+		margin-top:20px;
+	}
+	#id{
+		width:200px;
+		height:30px;
+		font-size:14px;
+	}
+	#pw{
+		width:200px;
+		height:30px;
+		font-size:14px;
+	}
+	.box{
+		width:280px;
+		height:60px;
+		margin:0 auto;
+	}
+	.box>li{
+		width:70px;
+		height:30px;
+		border:3px solid #000;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+		float:left;
+		margin:22px 8px;
+	}
+	.box>li>a>img{
+		width:70px;
+		height:30px;
+	}
+	.btn{
+		width:100px;
+		height:54px;
+		margin-left:96px;
+		background:#1b438b;
+		border-radius:10px;
+		-webkit-border-radius:10px;
+		-moz-border-radius:10px;
+		-o-border-radius:10px;
+		-ms-border-radius:10px;
+	}
+	.btn>a{
+		color:#fff;
+		font:bold 20px "Malgun Gothic";
+		padding:10px;
+	}
+	.btn>a:hover{
+		color:#f2f414;
+	}
+	.at-lg{
+		display:inline-block;
+		font-size:14px;
+	}
+	#auto{
+		float:left;
+		margin:4px;
+		margin-left:30px;
+	}
+	.auto-login{
+		margin-top:20px;
+	}
+	.find-join{
+		margin:10px 0 0 30px;
+		font-size:14px;
+	}
+}

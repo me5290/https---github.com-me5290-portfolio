@@ -1,0 +1,522 @@
+@charset "UTF-8";
+@media screen and (min-width:1024px){
+#wrapper{width:100%; overflow:hidden;}
+	/*header start*/
+	header,nav,footer{
+		width:100%;
+		position:relative;
+	}
+	header h2{text-align:center;}
+	.phone-nav{display:none;}
+	.gnb{
+		position:absolute;
+		top:0;
+		right:0;
+		margin:30px;
+	}
+	.gnb>li{
+		float:left;
+		margin-right:30px;
+	}
+	#language{
+		background:#000;
+		color:#fff;
+	}
+	#lnb{
+		position:relative;
+		height:60px;
+		background:#000;
+	}
+	#lnb:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	#lnb>ul{
+		margin:0 auto;
+		width:840px;
+		height:60px;
+	}
+	#lnb>ul>li{
+		width:210px;
+		height:60px;
+		float:left;
+		text-align:center;
+		line-height:70px;
+	}
+	#lnb>ul>li>a{
+		width:210px;
+		height:40px;
+		font:bold 28px "Malgun Gothic";
+		color:#b3b3b3;
+		padding:10px;
+	}
+	#lnb>ul>li>a:hover{
+		color:#fff;
+		text-decoration:underline;
+	}
+	#lnb ul li ul{
+		position:absolute;
+		left:40px;
+		top:39px;
+		width:210px;
+		display:none;
+		z-index:200;
+	}
+	#lnb ul li ul li{
+		padding:20px 40px;
+		border-bottom:1px solid #fff;
+		background:#000;
+		line-height:20px;
+	}
+	#lnb ul li ul li a{
+		color:#fff;
+		font-size:20px;
+		text-align:center;
+		clear:both;
+	}
+	#lnb ul li ul li a:hover{
+		color:red;
+	}
+	#lnb ul li:hover ul{display:block;}
+	#lnb>ul>li.n1>ul{left:540px; top:60px;}
+	#lnb>ul>li.n2>ul{left:750px; top:60px;}
+	#lnb>ul>li.n3>ul{left:960px; top:60px;}
+	#lnb>ul>li.n4>ul{left:1170px; top:60px;}
+	.head-search{display:none;}
+	#search{
+		width:370px;
+		height:50px;
+		background:#ce2027;
+		position:absolute;
+		top:5px;
+		right:10px;
+		clear:both;
+	}
+	.tbox{
+		width:300px;
+		height:36px;
+		font-size:20px;
+		margin-top:7px;
+		margin-left:10px;
+		border:none;
+		text-indent:20px;
+		float:left;
+	}
+	.sbtn{
+		float:right;
+		width:40px;
+		height:40px;
+		border:none;
+		background:none;
+		margin:6px 10px 0 0;
+	}
+	/*header end*/
+	/*footer start*/
+	footer{
+		width:100%;
+		height:200px;
+		background:#000;
+		clear:both;
+	}
+	footer h2{
+		width:200px;
+		height:40px;
+		margin:0 auto;
+		padding-top:30px;
+	}
+	hr{
+		color:#fff;
+		width:54%;
+		margin:0 auto;
+		margin-top:20px;
+	}
+	footer p{
+		width:1300px;
+		color:#fff;
+		font-size:18px;
+		margin:0 auto;
+		text-align:center;
+		margin-top:20px;
+	}
+	/*footer end*/
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	#wrapper{width:100%; overflow:hidden;}
+		/*header start*/
+	header,nav,footer{
+		width:100%;
+		position:relative;
+	}
+	header h2{text-align:center;}
+	header h2 img{
+		width:220px;
+		height:60px;
+	}
+	.pc-nav{display:none;}
+	.phone-nav{display:block; z-index:205;}
+	/* body,html{overflow:hidden;}*/
+    .menu_btn{
+        text-align:right;
+        padding:10px;
+		position:absolute;
+		top:10px;
+		right:10px;
+    }
+    .menu_bg{
+        width:100%;
+        height:1024px;
+        background:rgba(0,0,0,0.7);
+        position:absolute;
+        top:0;
+        display:none;
+    }
+    .sidenav_menu{
+        width:50%;
+        height:1024px;
+        background:#000;
+        position:absolute;
+        top:0;
+        right:-50%;  
+		z-index:100;
+    }
+    .close_btn{
+        width:25px;
+        height:25px;
+        margin-top:10px;
+		margin-right:20px;
+		float:right;
+    }
+    .close_btn>a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+	.close_btn>a>img{
+		width:30px;
+		height:30px;
+		margin:10px 14px 0 0;
+	}
+    .menu_wrap{
+        list-style:none;
+    }
+    .menu_wrap li a{
+        color:#fff;
+        text-decoration:none;
+		font:24px "Malgun Gothic";
+    }
+	.menu_wrap>li{
+		background:#000;
+		/*height:40px;*/
+		line-height:40px;
+		border-bottom:1px solid #fff;
+		padding:10px 0 0 16px;
+	}
+	.menu_wrap>li:hover{
+		background:#666;
+	}
+	.menu_wrap>li:hover img{
+		transform:rotate(180deg);
+	}
+	.side-menu-out{
+		float:right;
+		margin:6px 16px 0 0;
+		background:none;
+		border:none;
+	}
+	.side-menu-out>img{
+		width:30px;
+		height:20px;
+		margin-right:20px;
+		transition:all 0.4s ease;
+		-webkit-transition:all 0.4s ease;
+	}
+	.sidenav-header{
+		width:100%;
+		height:60px;
+		background:#000;
+	}
+	.gnb{
+		float:left;
+	}
+	.gnb>li{
+		float:left;
+		padding-left:30px;
+		padding-top:16px;
+	}
+	.gnb>li>a{
+		color:#fff;
+		font:20px "Malgun Gothic";
+	}
+	.menu_wrap{
+		width:100%;
+		height:100%;
+	}
+	.dropdown{
+		display:none;
+	}
+	.dropdown>li{
+		width:100%;
+		display:block;
+		clear:both;
+	}
+	.dropdown>li>a:hover{
+		color:red;
+	}
+	.dropdown>li>a{
+		padding:20px;
+		font:14px "Malgun Gothic";
+	}
+	.head-search{display:none;}
+	#search{
+		width:370px;
+		height:50px;
+		background:#000;
+		padding-bottom:20px;
+	}
+	.tbox{
+		width:300px;
+		height:36px;
+		font-size:20px;
+		margin-top:7px;
+		margin-left:10px;
+		border:none;
+		text-indent:20px;
+		float:left;
+	}
+	.sbtn{
+		float:right;
+		width:40px;
+		height:40px;
+		border:none;
+		background:none;
+		margin:6px 10px 0 0;
+	}
+	/*header end*/
+	/*footer start*/
+	footer{
+		width:100%;
+		height:auto;
+		background:#000;
+		clear:both;
+	}
+	footer h2{
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding-top:15px;
+	}
+	hr{
+		color:#fff;
+		width:70%;
+		margin:0 auto;
+		margin-top:10px;
+	}
+	footer p{
+		width:70%;
+		color:#fff;
+		font-size:12px;
+		margin:0 auto;
+		text-align:center;
+		margin-top:10px;
+		padding-bottom:10px;
+	}
+	/*footer end*/
+}
+@media screen and (max-width:767px){
+			#wrapper{width:100%; overflow:hidden;}
+		/*header start*/
+	header,nav,footer{
+		width:100%;
+		position:relative;
+	}
+	header h2{text-align:center;}
+	header h2 img{
+		width:140px;
+		height:40px;
+		margin-top:4px;
+	}
+	.pc-nav{display:none;}
+	.phone-nav{display:block; z-index:205;}
+	/* body,html{overflow:hidden;}*/
+    .menu_btn{
+        text-align:right;
+        padding:10px;
+		position:absolute;
+		top:2px;
+		right:0;
+    }
+	.menu_btn img{
+		width:35px;
+		height:26px;
+		float:right;
+	}
+    .menu_bg{
+        width:100%;
+        height:667px;
+        background:rgba(0,0,0,0.7);
+        position:absolute;
+        top:0;
+        display:none;
+    }
+    .sidenav_menu{
+        width:50%;
+        height:667px;
+        background:#000;
+        position:absolute;
+        top:0;
+        right:-50%;  
+		z-index:100;
+    }
+    .close_btn{
+        width:25px;
+        height:25px;
+        margin-top:10px;
+		margin-right:0;
+		float:right;
+    }
+    .close_btn>a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+	.close_btn>a>img{
+		width:15px;
+		height:15px;
+	}
+    .menu_wrap{
+        list-style:none;
+		clear:both;
+    }
+    .menu_wrap li a{
+        color:#fff;
+        text-decoration:none;
+		font:14px "Malgun Gothic";
+    }
+	.menu_wrap>li{
+		background:#000;
+		/*height:40px;*/
+		line-height:40px;
+		border-bottom:1px solid #fff;
+		padding:4px 0 0 16px;
+	}
+	.menu_wrap>li:hover{
+		background:#666;
+	}
+	.menu_wrap>li:hover img{
+		transform:rotate(180deg);
+	}
+	.side-menu-out{
+		float:right;
+		margin:14px 10px 0 0;
+		background:none;
+		border:none;
+	}
+	.side-menu-out>img{
+		width:16px;
+		height:10px;
+		transition:all 0.4s ease;
+		-webkit-transition:all 0.4s ease;
+	}
+	.sidenav-header{
+		width:100%;
+		height:40px;
+		background:#000;
+	}
+	.gnb{
+		float:left;
+	}
+	.gnb>li{
+		float:left;
+		padding-left:10px;
+		padding-top:6px;
+	}
+	.gnb>li>a{
+		color:#fff;
+		font:12px "Malgun Gothic";
+	}
+	.menu_wrap{
+		width:100%;
+		height:100%;
+	}
+	.dropdown{
+		display:none;
+	}
+	.dropdown>li{
+		width:100%;
+		display:block;
+		clear:both;
+	}
+	.dropdown>li>a:hover{
+		color:red;
+	}
+	.dropdown>li>a{
+		padding:20px;
+		font:8px "Malgun Gothic";
+	}
+	.head-search{display:none;}
+	#search{
+		width:100%;
+		height:60px;
+		background:#000;
+		clear:both;
+	}
+	.side-search{
+		clear:both;
+		display:block;
+	}
+	.tbox{
+		width:130px;
+		height:22px;
+		font-size:10px;
+		margin-left:10px;
+		border:none;
+		text-indent:20px;
+		float:left;
+	}
+	.sbtn{
+		float:right;
+		width:20px;
+		height:20px;
+		border:none;
+		background:none;
+		margin:0px 10px 0 0;
+	}
+	.sbtn img{
+		width:20px;
+		height:20px;
+	}
+	.mv-bg{
+		display:none;
+	}
+	/*header end*/
+	/*footer start*/
+	footer{
+		width:100%;
+		height:auto;
+		background:#000;
+		clear:both;
+	}
+	footer h2{
+		width:100%;
+		height:40px;
+		text-align:center;
+		padding-top:15px;
+	}
+	hr{
+		color:#fff;
+		width:80%;
+		margin:0 auto;
+		margin-top:10px;
+	}
+	footer p{
+		width:80%;
+		color:#fff;
+		font-size:11px;
+		margin:0 auto;
+		text-align:center;
+		margin-top:10px;
+		padding-bottom:10px;
+	}
+	/*footer end*/
+}

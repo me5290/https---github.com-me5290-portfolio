@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>상세페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/sangsae.css">
+		<!--[if lt IE 9]>
+		<script sec="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(function(){
+				$('.menu_btn>a').on('click', function(){
+					$('.menu_bg').show(); 
+					$('.sidenav_menu').animate({right:0});  
+				});
+				$('.close_btn>a').on('click', function(){
+					$('.menu_bg').hide(); 
+					$('.sidenav_menu').animate({
+						right: '-' + 50 + '%'
+								});  
+				});
+		
+			
+				$(".sidenav_menu ul.dropdown").hide();
+				$(".sidenav_menu ul.menu_wrap li").click(function(){
+					$("ul",this).slideToggle("fast");
+				});
+			});
+ 
+		
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+		<header>
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="320" height="70"></a></h2>
+			<div class="pc-nav">
+				<ul class="gnb">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">
+						<label for="Language" class="lang">언어</label>
+							<select name="language" id="language" size="1">
+								<option value="korean">한국어</option>
+								<option value="japanese">日本語</option>
+								<option value="English">English</option>
+								<option value="france">Français</option>
+								<option value="Thailand">ภาษาไทย</option>
+							</select>
+					</a></li>
+				</ul>
+				<nav id="lnb">
+					<ul>
+						<li class="n n1">
+							<a href="main.html" class="nn">상점</a>
+							<ul>
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li class="n n2">
+							<a href="sub.html" class="nn">커뮤니티</a>
+							<ul>
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						<li class="n n3">
+							<a href="#" class="nn">정보</a>
+							<ul>
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li class="n n4">
+							<a href="#" class="nn">고객지원</a>
+							<ul>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="head-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+				</nav>
+			</div>
+			<div class="phone-nav">
+				<div class="menu_btn">
+					<a href="#">       
+						<img  src="images/hamberger.png" alt="햄버거 버튼" width="30" height="24">
+					</a>
+				</div>
+				<div class="menu_bg"></div>
+				<div class="sidenav_menu">
+					<div class="sidenav-header">
+						<ul class="gnb">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+						</ul>
+						<div class="close_btn"><a href="#">       
+							<img src="images/side-close.png" alt="사이드 메뉴 닫기">
+							</a>
+						</div>
+					</div>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="side-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+					<ul class="menu_wrap">
+						<li>
+							<a href="main.html">
+								상점
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub.html">
+								커뮤니티
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						  <li>
+							<a href="#">
+								정보
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								고객지원
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="box1">
+				<video class="ark_video" playsinline="true" autoplay="true" muted="muted" width="1100px" class="highlight_player_item highlight_movie" poster="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie.293x165.jpg?t=1508277163" preload="none" src="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie480.webm?t=1508277163" data-hd-src="https://steamcdn-a.akamaihd.net/steam/apps/256693939/movie_max.webm?t=1508277163"></video>
+				<span><a href="#">모든 게임 </a>> <a href="#">액션 게임  </a> > <a href="#">ARK: Survival Evolved</a></span>
+				<h2>ARK: Survival Evolved</h2>
+				<p>2017 년 8 월 28 일</p>
+				<a href="#ark" class="down_btn"><img src="images/down_btn.png" alt="밑으로 가기 버튼"></a>
+			</div>
+				<a href="#" name="ark"></a>
+			<div class="box2">
+				<img src="images/ark.jpg" width="600" height="360" alt="아크 서바이벌 이볼브드">
+				<ul class="game_title">
+					<li>ARK: Survival Evolved</li>
+					<li>사용자 평가 : 대체로 긍정적</li>
+					<li>51,000 원</li>
+				</ul>
+				<div class="buy">
+					<button class="buy_btn"><a href="#">구매하기</a></button>
+					<button class="buy_btn"><a href="#">찜하기</a></button>
+					<button class="buy_btn"><a href="#">선물하기</a></button>
+				</div>
+				<div class="game_text">
+					<p>
+						ARK라는 신비한 섬의 해안에서 알몸으로 얼어 붙고 굶주린 남녀가되어 사냥, 자원 수확, 아이템 제작, 작물 재배, 기술 연구, 환경 보호를위한 대피소 건설을해야합니다. 교활함과 자원을 사용하여 땅을 돌아 다니는 리비아 탄 공룡과 기타 원시 생물을 죽이거나 길들이고 번식시키고 수백 명의 다른 플레이어와 팀을 이루어 생존하고 지배하며 탈출하세요!
+					</p>
+					<img src="images/ark_txt1.png" alt="아크 소개 텍스트1">
+					<p>
+						공룡, 생물, 번식! -야생 생물을 약화시켜 무의식 상태로 두드린 다음 적절한 음식으로 건강 상태로 되 돌리는 도전적인 포획 및 친 화성 과정을 통해 100 개 이상의 생물을 길들일 수 있습니다. 길 들여진 후에는 길 들여진 명령을 내릴 수 있으며, 길들여지고 훈련 된 정도에 따라 따를 수 있습니다. 레벨 업을 계속하고 식량을 소비 할 수있는 테이 메는 또한 인벤토리와 갑옷과 같은 장비를 운반 할 수 있고, 그들의 힘에 따라 당신의 정착지로 먹이를 되돌릴 수 있으며, 더 큰 길들이기를 타고 직접 제어 할 수 있습니다! 눈 덮인 산 위로 익룡을 비행하고, 적의 벽을 넘어 아군을 들어 올리고, 랩터 팩으로 정글을 질주하고, 거대한 브론토 사우루스를 따라 적 기지를 밟거나, 격렬한 T- 렉스의 뒤에서 먹이를 쫓아 내세요! 자신의 포식자 및 먹이 계층 구조로 역동적 인 생태계 라이프 사이클에 참여하세요. 당신은 지배력과 생존을 위해 고군분투하는 많은 종들 중 하나에 불과합니다. Tames는 또한 재조합 유전 유전에 기반한 형질 시스템을 사용하여 연속적인 세대를 선택적으로 번식시키기 위해 반대 성별과 교미 할 수 있습니다. 이 과정에는 계란 기반 배양과 포유류 임신 수명주기가 모두 포함됩니다! 또는 더 간단하게 말해서 아기를 키우십시오!
+					</p>
+					<img src="images/ark_txt2.png" alt="아크 소개 텍스트2">
+					<p>
+						사람의 고기를 포함하여 다양한 종류의 식물과 육류가 다른 영양 속성을 가지고 있기 때문에 생존하려면 먹고 마셔야합니다. 집과 재고에 담수를 공급하는 것은 시급한 문제입니다. 모든 신체적 행동은 식량과 물의 대가로 이루어지며 장거리 여행은 생존 위험으로 가득 차 있습니다! 재고 무게로 인해 이동 속도가 느려지고 무작위 날씨 패턴과 함께 낮 / 밤주기가 환경의 온도를 변경하여 또 다른 문제를 추가하여 배고픔이나 갈증을 더 빨리 유발합니다. 방화 또는 대피소를 건설하고 다양한 맞춤형 의류 및 갑옷을 제작하여 동적 실내 / 실외 단열 계산 시스템을 사용하여 위치 손상 및 극한 온도로부터 자신을 보호하십시오!
+					</p>
+					<img src="images/ark_txt3.png" alt="아크 소개 텍스트3">
+					<p>
+						나무와 채광 금속 및 기타 귀중한 자원으로 가득 찬 숲을 베어내어 램프, 빔, 기둥, 창문, 문, 게이트, 원격 게이트를 포함한 복잡한 스냅 링크 부품으로 구성된 대규모 다단계 구조를 만들 수 있습니다. , 트랩 도어, 수도관, 수도꼭지, 발전기, 전선 및 모든 종류의 전기 장치 및 기타 여러 유형의 사다리. 구조물에는 충분한 지지대가 파괴되면 부서 질 수있는 하중 시스템이 있으므로 건물을 보강하는 것이 중요합니다. 모든 구조와 항목을 페인트하여 집의 모양을 사용자 정의 할 수있을뿐만 아니라 픽셀 당 동적으로 페인트 할 수있는 간판, 텍스트 광고판 및 기타 장식용 개체를 배치 할 수 있습니다. 대피소는 극한의 날씨를 줄이고 자신과 은신처에 보안을 제공합니다! 무기, 의복 및
+					</p>
+					<img src="images/ark_txt4.png" alt="아크 소개 텍스트4">
+					<p>
+						주변의 야생 초목에서 씨앗을 따서 뿌려 놓은 곳에 심고, 물을주고 비료로 키 웁니다 (칼로리를 섭취 한 후 모든 똥이 나옵니다. 그런 다음 퇴비로 만들 수 있으며 일부 비료는 다른 것보다 낫습니다). 농작물을 돌보면 맛있고 희귀 한 과일을 생산하기 위해 자라며, 수많은 논리적 인 요리법을 요리하고 유용한 강장제를 만드는 데 사용할 수도 있습니다! 가장 강력한 특성을 가진 가장 희귀 한 식물 씨앗을 찾아보세요! 채식주의 자와 완전 채식주의자는 번성 할 수 있으며 비폭력적인 방식으로 ARK를 마스터하고 정복 할 수 있습니다!
+					</p>
+					<img src="images/ark_txt5.png" alt="아크 소개 텍스트5">
+					<p>
+						특별한 소환 장소에 희귀 한 희생물을 충분히 가져 오면 전투를 위해 도착할 ARK의 신과 같은 신화 생물 중 하나의주의를 끌 수 있습니다. 이 거대한 괴물은 가장 경험이 많은 플레이어 그룹과 길들인 군대에 최종 게임 목표를 제공하며 패배하면 매우 귀중한 진행 아이템을 얻을 수 있습니다.
+
+					</p>
+					<img src="images/ark_txt6.png" alt="아크 소개 텍스트6">
+					<p>
+						부족을 만들고 여기에 친구를 추가하면 모든 길들이는 부족의 모든 사람이 명령하고 동맹을 맺을 수 있습니다. 귀하의 부족은 또한 귀하의 홈 스폰 지점에서 리스폰 될 수 있습니다. 관리 부담을 줄이기 위해 구성원을 Tribe Admins로 승격하십시오. 공유 마을에 접근 할 수 있도록 키 아이템과 비밀번호를 배포하세요!
+
+					</p>
+					<img src="images/ark_txt7.png" alt="아크 소개 텍스트7">
+					<p>
+						모든 아이템은 다양한 통계와 품질을 가진 청사진에서 제작되며 해당 리소스가 필요합니다. ARK 전역의 더 멀고 거친 지역은 가장 높은 산, 가장 어두운 동굴 및 바다 깊이를 포함하여 더 나은 자원을 갖는 경향이 있습니다! 퍼포먼스 액션을 통해 경험을 쌓아 플레이어 캐릭터를 레벨 업하고, 길들이기 레벨 업하고, 죽더라도 청사진을 사용하지 않고 기억에서 아이템을 제작할 수있는 새로운 "엔 그램"을 배우세요! 다양한 신체 비율 수정 자와 함께 머리카락, 눈, 피부 톤으로 캐릭터의 기본 물리적 모습을 사용자 정의합니다. 방대한 방주를 탐험하면서 과거에 방주를 집으로 삼 았던 다른 생존자들이 남긴 단서를 수집 할 수있는 상세한 3D "탐험 자 노트"형태로 찾을 수 있습니다. 이 모든 것을 밝혀 냄으로써
+					</p>
+					<img src="images/ark_txt8.png" alt="아크 소개 텍스트8">
+					<p>
+						당신이 만드는 모든 것은 내구성이 있으며 수리하지 않으면 장시간 사용으로 인해 마모되며 게임을 떠날 때 캐릭터는 지속적인 세계에서 잠을 자고 있습니다. 인벤토리는 실제로 상자 또는 월드의 캐릭터에 존재합니다. 모든 것을 약탈하고 도난 당할 수 있으므로 보안을 유지하려면 축적, 팀 구성 또는 길 들여서 보관함을 보호해야합니다. 죽음은 영구적이며 수혈을 위해 혈액을 추출하거나 배설물을 채취하여 비료로 사용하거나 음식으로 사용하는 등 다른 플레이어를 녹아웃, 포획 및 강제 공급하여 자신의 목적으로 사용할 수도 있습니다. 당신의 육식 길들이기를 위해!
+					</p>
+					<img src="images/ark_txt9.png" alt="아크 소개 텍스트9">
+					<p>
+						신비한 ARK는 지상, 지하 및 수중의 많은 자연 및 부 자연스러운 구조로 구성된 강력하고 인상적인 환경입니다. 그 비밀을 완전히 탐구하면 가장 이국적인 절차 상 무작위 생물과 희귀 한 청사진을 찾을 수 있습니다. 또한 수천 년 동안 ARK의 이전 인간 거주자들이 작성한 게임으로 동적으로 업데이트되는 Explorer Notes는 ARK와 그 생물의 생물과 배경 이야기를 창의적으로 자세히 설명합니다. 탐사를 통해 게임 내 ARK 맵을 완전히 개발하고, 사용자 지정 관심 지점을 작성하고, 나침반 또는 GPS 좌표를 제작하여 근접 텍스트 및 음성 채팅 또는 장거리를 통해 통신 할 수있는 다른 플레이어와 탐색 할 수 있도록 지원합니다. 라디오. 다른 플레이어가 그들을 돕거나 길을 잃을 수 있도록 게임 내 표지판을 만들고 그립니다 ... 그런데 .. 궁극적으로 크리에이터에게 도전하고 ARK를 정복하는 방법은 무엇입니까? 결정적인 최종 게임이 계획되어 있습니다.
+					</p>
+					<img src="images/ark_txt10.png" alt="아크 소개 텍스트10">
+					<p>
+						100 명 이상의 플레이어 서버, 캐릭터, 구축 한 모든 것, 길들이기는 게임을 떠날 때도 게임에 남아 있습니다. 오벨리스크에 액세스하고 Steam 경제에서 데이터를 업로드 (또는 다운로드)하여 ARK 네트워크간에 캐릭터와 아이템을 물리적으로 이동할 수도 있습니다! 이전과 약간 씩 다른 ARK 은하가 당신의 흔적을 남기고 한 번에 하나씩 정복 할 수 있습니다. 특별한 공식 ARK는 해당 한정 실행 아이템과 함께 단수 테마 이벤트에서 제한된 시간 동안 월드 맵에 공개됩니다. ! 또한 이제는 무한한 재생성과 끝없는 놀라움을 위해 고유 한 '절차 적으로 생성 된 ARK'를 디자인하거나 무작위화할 수 있습니다.
+
+					</p>
+					<img src="images/ark_txt11.png" alt="아크 소개 텍스트11">
+					<p>
+						싱글 플레이어 로컬 게임을 플레이하고, 플레이어가 호스팅하는 비공식 서버간에 캐릭터와 아이템을 싱글 플레이어에서 멀티 플레이어로 앞뒤로 가져올 수 있습니다. 완전한 Steam Workshop 지원과 맞춤형 Unreal Engine 4 편집기로 게임을 개조하십시오. 지도와 자산을 예로 사용하여 ARK를 구축 한 방법을 확인하십시오. 자신의 서버를 호스팅하고 원하는대로 ARK를 정확하게 구성하십시오. 우리는 당신이 만든 것을보고 싶습니다!
+					</p>
+					<img src="images/ark_txt12.png" alt="아크 소개 텍스트12">
+					<p>
+						ARK의 생물체에 대한 초현실적 인 이미지는 완전히 다이내믹 한 조명 및 전역 조명, 날씨 시스템 (비, 안개, 눈 등) 및 사실적 특성을 갖춘 고도로 맞춤화 된 Unreal Engine 4를 사용하여 생생하게 표현됩니다. 실제 체적 클라우드 시뮬레이션, 최신 DirectX11 및 DirectX12 렌더링 기술. 수상 경력에 빛나는 "Ori and the Blind Forest"작곡가 Gareth Coker의 음악!
+					</p>
+				</div>
+				<a href="#ark1" class="down_btn"><img src="images/down_btn.png" alt="밑으로 가기 버튼"></a>
+			</div>
+			<div class="box3">
+				<a href="#" name="ark1"></a>
+				<h3>이 게임의 DLC</h3>
+				<div class="dlc">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/dlc1.jpg" alt="아크 dlc 제네시스 맵">
+								<p>ARK : Genesis 시즌 패스</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/dlc2.jpg" alt="아크 dlc 익스팅션 맵">
+								<p>ARK : Extinction-확장 팩</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/dlc3.jpg" alt="아크 dlc 에버레이션 맵">
+								<p>ARK : Aberration-확장 팩</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<h3>비슷한 게임 찾아보기</h3>
+				<div class="similar">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/similar1.jpg" alt="러스트">
+								<p>Rust</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/similar2.jpg" alt="더 포레스트">
+								<p>The Forest</p>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/similar3.jpg" alt="사티스팩토리">
+								<p>Satisfactory</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="foot">
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="200" height="40"></a></h2>
+			<hr>
+			<p>
+				㈜JOPRE 대표이사 이민형 경기도 안양시 만안구 만안로 000번길 0 전화 : 1588-6668 팩스 : 031-123-4567<br>
+				E-mail : JOPRE@help.co.kr 사업자등록번호 : 123-38-33675호 통신판매업 신고번호 : 제2013-경기안양-6668호 사업자정보확인<br>
+				© JOPRE Korea Corporation All Rights Reserved.
+			</p>
+			<hr>
+			<p>
+				개인정보 보호정책 | 사용권 | JOPRE 이용 약관 | 회사소개 | 광고문의 | 채용안내 | 환불 안내
+			</p>
+			</div>
+		</footer>
+		</div>
+		<!--wrapper end-->
+	</body>
+</html>

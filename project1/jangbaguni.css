@@ -1,0 +1,54 @@
+@charest "UTF-8";
+#content>.box1{margin:0 auto; width:1020px; margin-top:60px;}
+
+#content>.box1>h2{font-size:34px; padding-top:30px; float:left;}
+
+#content>.box1>h3{float:right; padding-top:30px;}
+
+#content>.box1>ul{float:right;}
+
+#content>.box1>ul>li{float:left; padding-top:36px; padding-right:10px; font-weight:bold; margin-bottom:10px;}
+
+#content>.box1>ul>li:nth-child(1){color:red;}
+
+.formsection{display:block;}
+
+#reading{width:30px; margin-top:5px; float:left;}
+
+table{border-bottom:1px solid #000000; border-collapse:collapse; margin-bottom:50px;}
+
+th,td{border-bottom:1px solid #000000; text-align:center;}
+
+th{height:50px; border-top:1px solid #000000;}
+
+td{border-left:1px solid #cccccc;}
+
+label{/*position:absolute;*/ left:480px; top:325px;}
+
+input[id="reading"]{display: inline-block; width: 20px; height: 20px; border: 2px solid #bcbcbc; cursor: pointer;}
+
+/**input[type="checkbox"]:checked + label{background:url(images/checkbox.png);}**/
+
+.border-none{border-left:none; width:160px; height:170px;}
+
+.gundam-img{padding:10px 0;}
+
+.goods-name{float:left;}
+
+.price{float:right;}
+
+.finish-price{padding:20px 0; font-size:24px; border-left:none; background:#fafafa;}
+
+.box2{width:1020px; height:440px; background:#fafafa; margin:0 auto; position:relative; border-top:3px solid #000; border-bottom:1px solid #000;}
+
+.box2>h1{position:absolute; left:100px; top:60px;}
+
+.total{float:right; position:absolute; right:10px; top:54px;}
+
+.total>li{font-size:20px; padding:18px 440px 18px 0; border-bottom:1px solid #d8d8d8;}
+	
+.button{margin:0 auto; width:280px; padding:30px 0;}
+
+.sum-total{float:right; position:absolute; right:10px; top:54px;}
+	
+.sum-total>li{font-size:18px; padding:20px 0;}

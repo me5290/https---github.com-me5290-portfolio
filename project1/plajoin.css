@@ -1,0 +1,123 @@
+@charest "UTF-8";
+
+#wrap{width:1020px; height:auto; margin:0 auto; padding:0; background:#ffffff;}
+	
+#wrap>h2{
+		margin-top:90px;
+		border-bottom:2px solid #221E1F;
+	}
+#wrap>h3{
+		margin-top:15px;
+		border-bottom:1px solid #221E1F;
+	}
+#wrap>h5{
+		margin:10px 0;
+	}
+#join{
+		width:1020px;
+		margin:0px auto;
+	}
+th,td{
+		border-bottom:1px solid #dddddd;
+	}
+.first{border-top:1px solid #221E1F;}
+
+input[type=text],input[type=password],.select1,.receive,.receive1,.dot_list	{
+		margin-left:20px;
+		padding:3px;
+	}
+.caution2{
+		margin-left:20px;
+		margin-top:5px;	
+	}
+.agree{
+		width:128px;
+		font-size:16px;
+		font-weight:bold;
+		display:inline-block;
+	}
+.dot_list{list-style:disc;}
+
+.dot_list>li{
+		margin-left:20px;
+		padding:2px 0;
+	}
+.overlap_ck{
+		margin-left:25px;
+		margin-top:5px;
+	}
+.overlap_ck>input[type=submit]{
+		width:100px;
+		height:28px;
+		background:#f2f3f5;}
+.caution>img{
+		width:25px; 
+		height:25px;
+		vertical-align:middle;
+		margin-right:5px;
+	}
+.caution2>img{
+		width:25px; 
+		height:25px;
+		vertical-align:middle;
+		margin-right:5px;
+	}
+.caution,.caution2,.caution3,.dot_list,.caution-block{
+		font-size:13px;
+	}
+.caution3{margin-bottom:2px; color:#fc0303;}
+
+.caution,.caution2,.caution-block{
+		color:#fc0303;
+	}
+.point{color:#fc0303;}
+
+.terms{
+		margin-bottom:25px;
+	}
+	.terms_box{
+		width:1010px;
+		height:250px;
+	}
+.ck_box{float:right;}
+
+.cb_all{
+		text-align:center;
+		margin-top:20px;
+		display:block;
+	}
+.caution-block{
+		text-align:center;
+		margin-top:50px;
+	}
+.caution-block>img{
+		width:25px; 
+		height:25px;
+		vertical-align:middle;
+		margin-right:5px;
+	}
+.button{
+		margin-top:20px;
+		margin-bottom:100px;
+	}
+.u-join{
+		margin:30px 10px 0 200px;
+	}
+.u-cancel{
+		display:inline-block;
+		text-align:center;
+	}
+.u-join>input[type="submit"]{
+		width:300px; 
+		padding:25px;
+		font-size:20px;
+		color:#ffffff;
+		background:#de2026;
+	}
+.u-cancel>input[type="submit"]{
+		width:300px; 
+		padding:25px;
+		font-size:20px;
+		color:#ffffff;
+		background:#666767;
+	}

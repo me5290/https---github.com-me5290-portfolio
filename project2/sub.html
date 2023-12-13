@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>서브페이지</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/sub.css">
+		<!--[if lt IE 9]>
+		<script sec="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(function(){
+				$('.menu_btn>a').on('click', function(){
+					$('.menu_bg').show(); 
+					$('.sidenav_menu').animate({right:0});  
+				});
+				$('.close_btn>a').on('click', function(){
+					$('.menu_bg').hide(); 
+					$('.sidenav_menu').animate({
+						right: '-' + 50 + '%'
+								});  
+				});
+		
+			
+				$(".sidenav_menu ul.dropdown").hide();
+				$(".sidenav_menu ul.menu_wrap li").click(function(){
+					$("ul",this).slideToggle("fast");
+				});
+			});
+			
+ 
+		
+		</script>
+	</head>
+	
+	<body>
+	<div id="wrapper">
+		<header>
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="320" height="70"></a></h2>
+			<div class="pc-nav">
+				<ul class="gnb">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">
+						<label for="Language" class="lang">언어</label>
+							<select name="language" id="language" size="1">
+								<option value="korean">한국어</option>
+								<option value="japanese">日本語</option>
+								<option value="English">English</option>
+								<option value="france">Français</option>
+								<option value="Thailand">ภาษาไทย</option>
+							</select>
+					</a></li>
+				</ul>
+				<nav id="lnb">
+					<ul>
+						<li class="n n1">
+							<a href="main.html" class="nn">상점</a>
+							<ul>
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li class="n n2">
+							<a href="sub.html" class="nn">커뮤니티</a>
+							<ul>
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						<li class="n n3">
+							<a href="#" class="nn">정보</a>
+							<ul>
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li class="n n4">
+							<a href="#" class="nn">고객지원</a>
+							<ul>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="head-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+				</nav>
+			</div>
+			<div class="phone-nav">
+				<div class="menu_btn">
+					<a href="#">       
+						<img  src="images/hamberger.png" alt="햄버거 버튼" width="30" height="24">
+					</a>
+				</div>
+				<div class="menu_bg"></div>
+				<div class="sidenav_menu">
+					<div class="sidenav-header">
+						<ul class="gnb">
+							<li><a href="login.html">로그인</a></li>
+							<li><a href="join.html">회원가입</a></li>
+						</ul>
+						<div class="close_btn"><a href="#">       
+							<img src="images/side-close.png" alt="사이드 메뉴 닫기">
+							</a>
+						</div>
+					</div>
+					<form id="search" name="search" method="get">
+						<label for="sbox" class="side-search">검색어를 입력하세요.</label>
+						<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+						<button class="sbtn">
+							<a href="#">
+								<img src="images/search_icon.png" width="40" height="40" alt="검색">
+							</a>
+						</button>
+					</form>
+					<ul class="menu_wrap">
+						<li>
+							<a href="main.html">
+								상점
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">인기게임</a></li>
+								<li><a href="#">신규게임</a></li>
+								<li><a href="#">찜한목록</a></li>
+								<li><a href="#">무료게임</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub.html">
+								커뮤니티
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">새소식</a></li>
+								<li><a href="#">이벤트</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">장터</a></li>
+							</ul>
+						</li>
+						  <li>
+							<a href="#">
+								정보
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">통계</a></li>
+								<li><a href="#">다운로드</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								고객지원
+							</a>
+							<button class="side-menu-out" onclick="downmenu">
+								<img src="images/side-menu-over.png" alt="사이드 메뉴 오버 이미지">
+							</button>
+						  	<ul class="dropdown">
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">1대1문의하기</a></li>
+								<li><a href="#">내문의</a></li>
+								<li><a href="#">환불문의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="mv-bg">
+				<a href="#">
+					<video class="mv" loop="" muted="" autoplay="" playsinline="" poster="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/page_bg_koreana.jpg?t=1607397193" class="fullscreen-bg__video">
+						<source src="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/webm_page_bg_koreana.webm?t=1607397193" type="video/webm">
+						<source src="https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/4af68ced02b3458ccd70c5a7/mp4_page_bg_koreana.mp4?t=1607397193" type="video/mp4">
+					</video>
+				</a>
+			</div>
+		</header>
+		<section>
+			<div class="content-box1">
+				<h3>새소식</h3>
+				<table>
+					<colgroup>
+						<col width="85%">
+						<col width="15%">
+					</colgroup>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="title-text"><a href="#">[공지] 2020 연말 이벤트 공개</a></td>
+							<td>2020-12-03</td>
+						</tr>
+						<tr>
+							<td class="title-text"><a href="#">[공지] 12월 신규출시 게임 안내</a></td>
+							<td>2020-12-01</td>
+						</tr>
+						<tr>
+							<td class="title-text"><a href="#">[공지] 11월 신규출시 게임 안내</a></td>
+							<td>2020-11-01</td>
+						</tr>
+						<tr>
+							<td class="title-text"><a href="#">[공지] 10월 신규출시 게임 안내</a></td>
+							<td>2020-10-01</td>
+						</tr>
+						<tr>
+							<td class="title-text"><a href="#">[공지] 9월 신규출시 게임 안내</a></td>
+							<td>2020-09-01</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content-box2">
+				<h3>이벤트</h3>
+				<a href="#">
+					<img src="images/con3-1.jpg" alt="스폰지밥 배틀 비키니 바텀" width="1020" height="400">
+				</a>
+				<a href="#">
+					<img src="images/con3-2.jpg" alt="워킹데드 세인츠 앤 시널" width="1020" height="400">
+				</a>
+			</div>
+			<div class="content-box3">
+				<h3>갤러리</h3>
+				<div class="gallery1">
+					<a href="#">
+						<img src="images/con2-7.jpg" alt="갱비스트" width="300" height="170">
+					</a>
+					<a href="#">
+						<h4 class="gallery_title1">갱비스트 조작법!!</h4>
+					</a>
+					<a href="#">
+						<p class="gallery_text1">갱비스트를 처음하는 초보들을 위한...</p>
+					</a>
+				</div>
+				<div class="gallery2">
+					<a href="#">
+						<img src="images/con1-10.jpg" alt="어몽어스" width="300" height="170">
+					</a>
+					<a href="#">
+						<h4 class="gallery_title2">어몽어스 임포스터 꿀팁</h4>
+					</a>
+					<a href="#">
+						<p class="gallery_text2">꿀잼 임포스터 더 재밌게...</p>
+					</a>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="foot">
+			<h2><a href="main.html"><img src="images/로고.png" alt="조프리로고" width="200" height="40"></a></h2>
+			<hr>
+			<p>
+				㈜JOPRE 대표이사 이민형 경기도 안양시 만안구 만안로 000번길 0 전화 : 1588-6668 팩스 : 031-123-4567<br>
+				E-mail : JOPRE@help.co.kr 사업자등록번호 : 123-38-33675호 통신판매업 신고번호 : 제2013-경기안양-6668호 사업자정보확인<br>
+				© JOPRE Korea Corporation All Rights Reserved.
+			</p>
+			<hr>
+			<p>
+				개인정보 보호정책 | 사용권 | JOPRE 이용 약관 | 회사소개 | 광고문의 | 채용안내 | 환불 안내
+			</p>
+			</div>
+		</footer>
+		</div>
+	</body>
+</html>

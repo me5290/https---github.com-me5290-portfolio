@@ -1,0 +1,64 @@
+@charest "UTF-8";
+#primary{width:1020px; height:auto; margin:0 auto; /*border:1px solid black;*/ padding:10px 0 10px; overflow:hidden}
+
+#primarycontent{width:1020px; height:250px; margin:0 auto; /*border:1px solid yellow;*/}
+
+.news{width:750px; height:350px; background:white; float:left; border:1px solid black; margin-top:20px;}
+
+.notice{width:240px; height:350px; background:white; float:right; border:1px solid #cccccb; margin-top:20px;}
+
+.notice h3{border-bottom:1px solid #cccccb; padding:5px 0 5px 0; text-align:center;}
+
+.notice .list li{font-size:14px; /*list-style:circle;*/ padding:5px 0 0 9px; border-bottom:1px dotted #cccccb;}
+
+.notice .list li a:hover{color:red; text-decoration:underline;}
+
+#none{width:1020px; height:20px; margin:0 auto; background:white;}
+
+#contents{width:1020px; height:auto; margin:0 auto; /*border:1px solid #cccccb;*/ border-top:none;}
+
+#hotproduct{width:1020px; height:auto; margin:0 auto; /*background:white;*/}
+
+#hotproduct h2{background:white; text-align:center; font-weight:24px; margin-bottom:10px;}
+
+.hot{border-top:3px solid #cccccb;  width:1020px; height:1000px;}
+
+.photo1,.photo2,.photo3,.photo4,.photo5,.photo6{float:left; width:284px; height:465px; border:2px solid #fff; margin:20px 10px 0px 35px; text-align:center;}
+
+.photo1 p,.photo2 p,.photo3 p,.photo4 p,.photo5 p,.photo6 p{margin-top:10px;}
+
+.photo1 a,.photo2 a,.photo3 a,.photo4 a,.photo5 a,.photo6 a{color:black;}
+
+.photo1 a{display:block; width:284px; height:515px;}
+	
+.photo1:hover,.photo2:hover,.photo3:hover,.photo4:hover,.photo5:hover,.photo6:hover{/*width:284px; height:515px;*/ border:2px solid #cccccb;}
+
+.photo3 .price{margin-top:7px; font-size:24px; color:black;}
+
+.price{font-size:24px; font-weight:bold; display:inline-block; margin-top:30px;}
+
+#newproduct{width:1020px; height:auto; margin:0 auto; /*border:1px solid #cccccb;*/}
+
+#newproduct h2{background:white; text-align:center; font-weight:24px; margin-bottom:10px;}
+
+.new{border-top:3px solid #cccccb;  width:1020px; height:830px;}
+
+.new1,.new5{margin-left:6px;}
+
+.new1,.new2,.new3,.new4,.new5,.new6,.new7,.new8{float:left; width:249px; height:398px; border:2px solid #fff; margin-top:10px; text-align:center;}
+	
+.new1 h4,.new2 h4,.new3 h4,.new4 h4,.new5 h4,.new6 h4,.new7 h4,.new8 h4{margin-top:20px; font-size:24px; color:black;}
+
+.new1:hover,.new2:hover,.new3:hover,.new4:hover,.new5:hover,.new6:hover,.new7:hover,.new8:hover{/*width:284px; height:515px;*/ border:2px solid #cccccb;}
+
+.new1 p,.new2 p,.new3 p,.new4 p,.new5 p,.new6 p,.new7 p,.new8 p{margin-top:10px;}
+
+.new1 a,.new2 a,.new3 a,.new4 a,.new5 a,.new6 a,.new7 a,.new8 a{color:black;}
+
+
+
+
+
+
+/*테두리를 흰색으로 주고 호버를 하면 검은색으로 나오게 끔 하기*/
+

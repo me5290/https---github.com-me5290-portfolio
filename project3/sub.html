@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/master.css">
+		<link rel="stylesheet" href="css/sub.css">
+		<!--[if lt IE 9]>
+		<script sec="http://html5shiv.googlecode.com/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.easing.1.3.min.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			$(function(){	
+				$('.menu_btn>a').on('click', function(){
+					$('.menu_bg').show(); 
+					$('.side_menu').animate({right:0});  
+				});
+				$('.close_btn>a').on('click', function(){
+					$('.menu_bg').hide(); 
+					$('.side_menu').animate({
+						right: '-' + 70 + '%'
+								});  
+				});
+		
+			
+				$(".side_menu ul.dropdown").hide();
+				$(".menu_wrap li").click(function(){
+					$("ul",this).slideToggle("fast");
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="head">
+					<div class="headBar">
+						<h2>
+							<a href="main.html">
+								<img src="images/Logo.png" alt="원모어 커피 로고">
+							</a>
+						</h2>
+						<nav class="lnb">
+							<ul>
+								<li>
+									<a href="sub.html">MENU</a>
+								</li>
+								<li>
+									<a href="#">NEWS</a>
+								</li>
+								<li>
+									<a href="#">ABOUT US</a>
+								</li>
+								<li>
+									<a href="#">STORE</a>
+								</li>
+								<li>
+									<a href="#">CUSTOMER</a>
+								</li>
+								<div class="subNav">
+									<ul class="sub_nav1">
+										<li><a href="#">커피</a></li>
+										<li><a href="#">음료</a></li>
+										<li><a href="#">디저트</a></li>
+										<li><a href="#">상품</a></li>
+									</ul>
+									<ul class="sub_nav2">
+										<li><a href="#">새소식</a></li>
+										<li><a href="#">이벤트</a></li>
+										<li><a href="#">제휴 서비스</a></li>
+									</ul>
+									<ul class="sub_nav3">
+										<li><a href="#">원모어 소개</a></li>
+										<li><a href="#">원모어 카드</a></li>
+										<li><a href="#">광고</a></li>
+									</ul>
+									<ul class="sub_nav4">
+										<li><a href="#">매장찾기</a></li>
+										<li><a href="#">드라이브 스루</a></li>
+									</ul>
+									<ul class="sub_nav5">
+										<li><a href="#">고객의 소리</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">1대1 문의하기</a></li>
+										<li><a href="#">가맹점 문의</a></li>
+										<li><a href="#">채용 정보</a></li>
+									</ul>
+								</div>
+							</ul>
+						</nav>
+						<ul class="gnb">
+							<li><a href="#">로그인</a></li>
+							<li><a href="#">회원가입</a></li>
+							<li><a href="#">매장찾기</a></li>
+							<li><a href="#">고객의 소리</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="mobile_nav">
+					<ul class="mobile_menu">
+						<li>
+							<a href="#">       
+								<img  src="images/side_menu1.png" alt="사용자 아이콘" width="30" height="24">
+							</a>
+						</li>
+						<li>
+							<a href="#">       
+								<img  src="images/side_menu2.png" alt="위치 아이콘" width="30" height="24">
+							</a>
+						</li>
+						<li class="menu_btn">
+							<a href="#">       
+								<img  src="images/side_menu3.png" alt="햄버거 아이콘" width="30" height="24">
+							</a>
+						</li>
+					</ul>
+					<div class="menu_bg"></div>
+					<div class="side_menu">
+						<div class="side_headbar">
+							<form id="search" name="search" method="get">
+								<label for="sbox" class="side-search">검색어를 입력하세요.</label>
+								<input type="search" id="sbox" class="tbox" placeholder="검색어를 입력하세요.">
+								<button class="sbtn">
+									<a href="#">
+										검색
+									</a>
+								</button>
+							</form>
+							<div class="close_btn"><a href="#">       
+								<img src="images/side-close.png" alt="사이드 메뉴 닫기">
+								</a>
+							</div>
+						</div>
+						<ul class="menu_wrap">
+							<li>
+								<a href="sub.html">
+									MENU
+								</a>
+								<button class="side_menu_over" onclick="downmenu">
+									<img src="images/side_menu_btn.png" width="22" height="10">
+								</button>
+								<ul class="dropdown">
+									<li><a href="#">커피</a></li>
+									<li><a href="#">음료</a></li>
+									<li><a href="#">디저트</a></li>
+									<li><a href="#">상품</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									NEWS
+								</a>
+								<button class="side_menu_over" onclick="downmenu">
+									<img src="images/side_menu_btn.png" width="22" height="10">
+								</button>
+								<ul class="dropdown">
+									<li><a href="#">새소식</a></li>
+									<li><a href="#">이벤트</a></li>
+									<li><a href="#">제휴 서비스</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									ABOUT US
+								</a>
+								<button class="side_menu_over" onclick="downmenu">
+									<img src="images/side_menu_btn.png" width="22" height="10">
+								</button>
+								<ul class="dropdown">
+									<li><a href="#">원모어 소개</a></li>
+									<li><a href="#">원모어 카드</a></li>
+									<li><a href="#">광고</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									STORE
+								</a>
+								<button class="side_menu_over" onclick="downmenu">
+									<img src="images/side_menu_btn.png" width="22" height="10">
+								</button>
+								<ul class="dropdown">
+									<li><a href="#">매장찾기</a></li>
+									<li><a href="#">드라이브 스루</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									CUSTOMER
+								</a>
+								<button class="side_menu_over" onclick="downmenu">
+									<img src="images/side_menu_btn.png" width="22" height="10">
+								</button>
+								<ul class="dropdown">
+									<li><a href="#">고객의 소리</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">1대1 문의하기</a></li>
+									<li><a href="#">가맹점 문의</a></li>
+									<li><a href="#">채용 정보</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+			</header>
+			<!--header end-->
+			<section>
+				<div class="menu_content1">
+					<div class="menu_content_box1">
+						<h2>전체 메뉴</h2>
+						<p>Always happy you</p>
+						<ul>
+							<li>
+								<a href="#">
+									커피
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									음료
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									디저트
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									상품
+								</a>
+							</li>
+						</ul>
+						<form id="menu_search" name="menu_search" method="get">
+							<label for="msbox" class="side-search">검색어를 입력하세요.</label>
+							<input type="search" id="msbox" class="mtbox" placeholder="검색어를 입력하세요.">
+							<button class="msbtn">
+								<a href="#">
+									검색
+								</a>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="menu_content2">
+					<div class="menu_content_box">
+						<h3>커피</h3>
+						<hr>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/img1.png" alt="ICE 아메리카노">
+								</a>
+								<p>ICE 아메리카노</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img2.png" alt="ICE 바닐라라떼">
+								</a>
+								<p>ICE 바닐라라떼</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img7.png" alt="ICE 카라멜 마끼아또">
+								</a>
+								<p>ICE 카라멜 마끼아또</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img8.png" alt="ICE 카페라떼">
+								</a>
+								<p>ICE 카페라떼</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img9.png" alt="ICE 카페모카">
+								</a>
+								<p>ICE 카페모카</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img10.png" alt="HOT 카푸치노">
+								</a>
+								<p>HOT 카푸치노</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img11.png" alt="에스프레소">
+								</a>
+								<p>에스프레소</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img12.png" alt="아포카토">
+								</a>
+								<p>아포카토</p>
+							</li>
+						</ul>
+						<button class="more_btn">
+							<a href="#">
+								더보기 >
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="menu_content3">
+					<div class="menu_content_box">
+						<h3>음료</h3>
+						<hr>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/img3.png" alt="딸기주스">
+								</a>
+								<p>딸기주스</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img4.png" alt="쿠키 프라페">
+								</a>
+								<p>쿠키 프라페</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img13.png" alt="레몬 에이드">
+								</a>
+								<p>레몬 에이드</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img14.png" alt="아이스티">
+								</a>
+								<p>아이스티</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img15.png" alt="망고 프라페">
+								</a>
+								<p>망고 프라페</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img16.png" alt="플레인 요거트 스무디">
+								</a>
+								<p>플레인 요거트 스무디</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img17.png" alt="딸기 요거트 스무디">
+								</a>
+								<p>딸기 요거트 스무디</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img18.png" alt="초코+바나나 주스">
+								</a>
+								<p>초코+바나나 주스</p>
+							</li>
+						</ul>
+						<button class="more_btn">
+							<a href="#">
+								더보기 >
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="menu_content4">
+					<div class="menu_content_box">
+						<h3>디저트</h3>
+						<hr>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/img5.png" alt="티라미수">
+								</a>
+								<p>티라미수</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img6.png" alt="마카롱">
+								</a>
+								<p>마카롱</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img19.png" alt="딸기 와플">
+								</a>
+								<p>딸기 와플</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img20.png" alt="애플 시나몬 와플">
+								</a>
+								<p>애플 시나몬 와플</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img21.png" alt="초코 와플">
+								</a>
+								<p>초코 와플</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img22.png" alt="바나나 누텔라 와플">
+								</a>
+								<p>바나나 누텔라 와플</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img23.png" alt="츄러스">
+								</a>
+								<p>츄러스</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img24.png" alt="에그타르트">
+								</a>
+								<p>에그타르트</p>
+							</li>
+						</ul>
+						<button class="more_btn">
+							<a href="#">
+								더보기 >
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="menu_content5">
+					<div class="menu_content_box">
+						<h3>상품</h3>
+						<hr>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/img25.png" alt="텀블러 화이트">
+								</a>
+								<p>텀블러 화이트</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img26.png" alt="텀블러 블랙">
+								</a>
+								<p>텀블러 블랙</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img28.png" alt="텀블러 카키">
+								</a>
+								<p>텀블러 카키</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img29.png" alt="텀블러 블루그린">
+								</a>
+								<p>텀블러 블루그린</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img30.png" alt="콜드컵">
+								</a>
+								<p>콜드컵</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img31.png" alt="머그컵 스카이">
+								</a>
+								<p>머그컵 스카이</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img32.png" alt="머그컵 오렌지">
+								</a>
+								<p>머그컵 오렌지</p>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/img27.png" alt="카카오 프렌즈 머그컵">
+								</a>
+								<p>카카오 프렌즈 머그컵</p>
+							</li>
+						</ul>
+						<button class="more_btn">
+							<a href="#">
+								더보기 >
+							</a>
+						</button>
+					</div>
+				</div>
+			</section>
+			<!--section end-->
+			<footer>
+				<p>개인정보처리방침 | 홈페이지 이용약관 | 위치정보 이용약관 | 가맹안내 | 채용안내 | site map | 대량쿠폰구매</p>
+				<hr>
+				<div class="footLogo">
+					<a href="main.html"><img src="images/Logo.png" alt="원모어 커피 로고"></a>
+				</div>
+				<p>ONE MORE 대표이사 이민형 경기도 안양시 만안구 만안로 000번길 0 전화 : 1588-6668 팩스 : 031-123-4567<br>
+				E-mail : onemore@help.co.kr 사업자등록번호 : 123-38-33675호 통신판매업 신고번호 : 제2013-경기안양-6668호 사업자정보확인<br>
+				© 2021 ONE MORE COFFEE Korea Corporation All Rights Reserved.</p>
+			</footer>
+		</div>
+	</body>
+</html>
